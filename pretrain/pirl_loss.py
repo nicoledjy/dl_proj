@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import torch
 import numpy as np
 
