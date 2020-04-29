@@ -53,7 +53,7 @@ if __name__ == '__main__':
                         help='If true apply non-linearity to the output of function heads '
                              'applied to resnet image representations')
     parser.add_argument('--temp-parameter', type=float, default=0.07, help='Temperature parameter in NCE probability')
-    parser.add_argument('--cont-epoch', type=int, default=1, help='Epoch to start the training from, helpful when using'
+    parser.add_argument('--cont-epoch', type=int, default=0, help='Epoch to start the training from, helpful when using'
                                                                   'warm start')
     parser.add_argument('--experiment-name', type=str, default='e1_resnet50_')
     args = parser.parse_args()
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     # Define train_set, val_set objects
-    scene_index = np.arange(1)
+    scene_index = np.arange(args.num_scene)
     image_folder = '/content/drive/My Drive/self_dl/student_data/data'
     train_set = GetUnlabeledDataForPIRL(image_folder=image_folder, scene_index=scene_index, first_dim='image')
     val_set = GetUnlabeledDataForPIRL(image_folder=image_folder, scene_index=scene_index, first_dim='image')

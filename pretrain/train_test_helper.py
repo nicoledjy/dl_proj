@@ -104,7 +104,7 @@ class PIRLModelTrainTest():
         train_loss /= cnt_batches
 
         if epoch % 10 == 0:
-            torch.save(self.network.state_dict(), self.model_file_path + '_epoch_{}'.format(epoch))
+            torch.save(self.network.state_dict(), self.model_file_path + 'epoch_{}'.format(epoch))
 
 
 

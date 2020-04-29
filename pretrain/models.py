@@ -54,7 +54,7 @@ class PIRLResnet(nn.Module):
     def __init__(self, resnet_module, non_linear_head=False):
         super(PIRLResnet, self).__init__()
         self.resnet_module = resnet_module
-        self.lin_project_1 = nn.Linear(512, 128)
+        self.lin_project_1 = nn.Linear(2048, 128)
         self.lin_project_2 = nn.Linear(128 * 9, 128)
         if non_linear_head:
             self.lin_project_3 = nn.Linear(128, 128)  # Will only be used if non_linear_head is True
