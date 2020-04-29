@@ -15,8 +15,10 @@ from get_dataset import GetUnlabeledDataForPIRL
 from models import pirl_resnet
 from train_test_helper import PIRLModelTrainTest
 
-log_save_folder = '/content/drive/My Drive/self_dl/log_data'
-model_file_path = '/content/drive/My Drive/self_dl/pre_train_subsample/'
+# log_save_folder = '/content/drive/My Drive/self_dl/log_data'
+# model_file_path = '/content/drive/My Drive/self_dl/pre_train_subsample/'
+log_save_folder = '/scratch/jd4138/dl_log_data'
+model_file_path = '/scratch/jd4138/dl_pretrain/'
 
 def log_experiment(exp_name, n_epochs, train_losses, val_losses, train_accs, val_accs):
     observations_df = pd.DataFrame()
@@ -66,7 +68,8 @@ if __name__ == '__main__':
 
     # Define train_set, val_set objects
     scene_index = np.arange(args.num_scene)
-    image_folder = '/content/drive/My Drive/self_dl/student_data/data'
+    #image_folder = '/content/drive/My Drive/self_dl/student_data/data'
+    image_folder = '/scratch/jd4138/data'
     train_set = GetUnlabeledDataForPIRL(image_folder=image_folder, scene_index=scene_index, first_dim='image')
     val_set = GetUnlabeledDataForPIRL(image_folder=image_folder, scene_index=scene_index, first_dim='image')
 
