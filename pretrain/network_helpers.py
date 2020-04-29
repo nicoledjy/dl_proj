@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 import torch
 from models import pirl_resnet, classifier_resnet
 

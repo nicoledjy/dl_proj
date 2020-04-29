@@ -23,4 +23,5 @@ conda activate pytorch
 
 
 cd /scratch/jd4138/dl_proj/pretrain
+import torch
 python3 pirl_train.py --num-scene 106 --model-type res50 --batch-size 128 --lr 0.005 --count-negatives 40000
