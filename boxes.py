@@ -4,7 +4,6 @@ from torch import Tensor
 import torchvision
 
 
-
 def nms(boxes, scores, iou_threshold):
     # type: (Tensor, Tensor, float)
     """
@@ -129,8 +128,6 @@ def box_area(boxes):
     return (boxes[:, 2] - boxes[:, 0]) * (boxes[:, 3] - boxes[:, 1])
 
 
-# implementation from https://github.com/kuangliu/torchcv/blob/master/torchcv/utils/box.py
-# with slight modifications
 def box_iou(boxes1, boxes2):
     """
     Return intersection-over-union (Jaccard index) of boxes.
@@ -152,4 +149,5 @@ def box_iou(boxes1, boxes2):
     inter = wh[:, :, 0] * wh[:, :, 1]  # [N,M]
 
     iou = inter / (area1[:, None] + area2 - inter).type(torch.double)
+    
     return iou

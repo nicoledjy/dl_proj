@@ -72,12 +72,12 @@ def my_collate_fn(batch):
 
     for x in batch:
         images.append(x[0])  
-        gt_classes, gt_offsets = get_bbox_gt(x[1]['bounding_box'], x[1]['category'], gt_boxes, map_sz, device)
+        gt_classes, gt_offsets = get_bbox_gt(x[1]['bounding_box'], x[1]['category'], gt_boxes, map_sz)
         class_target.append(gt_classes)
         box_target.append(gt_offsets)
 
-    samples = torch.stack(images).to(self.device)
-    samples = samples.view(len(batch), -1, img_h, img_w).to(self.device).double()
+    samples = torch.stack(images)
+    samples = samples.view(len(batch), -1, img_h, img_w).double()
     class_target = torch.stack(class_target)
     box_target = torch.stack(box_target)
 
@@ -145,6 +145,8 @@ class ObjDetTrainer(Trainer):
                 out_pred, out_bbox = self.model(samples.double().to(device))
                 out_bbox = out_bbox.view(self.batch_sz, -1, 4)
                 out_pred = out_pred.view(self.batch_sz, 9, -1)
+                # transfer coordinates
+                #coor = Transform_coor(out_bbox, box_target, class_target, nms_threshold=0.1, plot=True)
 
                 # train only for classification for now
                 loss = self.bbox_loss(box_target.to(device), class_target.to(device), out_bbox)
@@ -175,6 +177,8 @@ class ObjDetTrainer(Trainer):
                 out_pred, out_bbox = self.model(samples.to(device))
                 out_bbox = out_bbox.view(self.batch_sz, -1, 4)
                 out_pred = out_pred.view(self.batch_sz, 9, -1)
+                # transfer coordinates
+                #coor = Transform_coor(out_bbox, box_target, class_target, nms_threshold=0.1, plot=True)
 
                 # train only for classification for now
                 loss = self.bbox_loss(box_target.to(device), class_target.to(device), out_bbox)
