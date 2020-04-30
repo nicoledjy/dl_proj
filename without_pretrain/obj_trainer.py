@@ -173,7 +173,7 @@ class ObjDetTrainer(Trainer):
         val_losses = []
         print('Started validation')
         with torch.no_grad():
-            for i, (samples, class_target, box_target) in enumerate(self.trainloader):
+            for i, (samples, class_target, box_target) in enumerate(self.valloader):
                 out_pred, out_bbox = self.model(samples.to(device))
                 out_bbox = out_bbox.view(self.batch_sz, -1, 4)
                 out_pred = out_pred.view(self.batch_sz, 9, -1)
@@ -187,7 +187,7 @@ class ObjDetTrainer(Trainer):
                 torch.cuda.empty_cache()
 
                 if i % 10 == 0:
-                    print('Val Epoch: {} [{}/{} ({:.0f}%)]\tAverage Loss So Far: {:.6f}'.format(ep, i * len(samples), len(valloader.dataset), 5. * i / len(valloader), np.mean(val_losses)))
+                    print('Val Epoch: {} [{}/{} ({:.0f}%)]\tAverage Loss So Far: {:.6f}'.format(epoch, i * len(samples), len(self.valloader.dataset), 5. * i / len(self.valloader), np.mean(val_losses)))
 
         print("Average Validation Epoch Loss: ", np.mean(val_losses))
 
