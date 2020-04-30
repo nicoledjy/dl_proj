@@ -2,7 +2,11 @@
 
 - AE pretraining
 
+
+
 - Roadmap prediction without pre-training
+
+
 
 - Object detection without per-training:
 
@@ -16,6 +20,9 @@
 - ```
   python main.py
   ```
+
+
+
 
 
 - PIRL pre-training:
@@ -32,6 +39,9 @@
   ```
   python pirl_train.py --num-scene 1 --model-type res50 --batch-size 2 --lr 0.1 --count-negatives 200
   ```
+
+
+
 
 
 - Object detection with Resnet50 backbone architecture:
