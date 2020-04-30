@@ -44,9 +44,11 @@ if __name__ == '__main__':
   # All the labels are saved in the annotation_csv file
   # image_folder = '../data'
   # annotation_csv = '../data/annotation.csv'
-  image_folder = '/content/drive/My Drive/self_dl/student_data/data'
-  annotation_csv = '/content/drive/My Drive/self_dl/student_data/data/annotation.csv'
+  # image_folder = '/content/drive/My Drive/self_dl/student_data/data'
+  # annotation_csv = '/content/drive/My Drive/self_dl/student_data/data/annotation.csv'
   #pirl_file_path = '/content/drive/My Drive/self_dl/pre_train/'
+  image_folder = '/scratch/jd4138/data'
+  annotation_csv = '/scratch/jd4138/data/annotation.csv'
 
   train_index = np.arange(106,124)
   val_index = np.arange(124,134)
