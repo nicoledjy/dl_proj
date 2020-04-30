@@ -15,7 +15,7 @@
   - --data-dir, default='../data'
   - --out-file, default='HRNET_RM_model.pt'
 
-- ```
+  ```
   python train_HRNet_RoadMap.py
   ```
 
@@ -31,7 +31,7 @@
   - --lr, default=1e-4
   - --weight-decay, default=1e-4
 
-- ```
+  ```
   python main.py
   ```
 
