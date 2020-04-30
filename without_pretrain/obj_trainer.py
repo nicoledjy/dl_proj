@@ -162,10 +162,10 @@ class ObjDetTrainer(Trainer):
  
             print("\nAverage Train Epoch Loss: ", np.mean(train_losses))
             
-            validate(ep)
+            self.validate(ep)
 
         if save:
-            validate(ep, True, False)
+            self.validate(ep, True, False)
 
     
     def validate(self, epoch, save=False, visualize=False):
