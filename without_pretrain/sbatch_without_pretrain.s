@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu:p40:1
 #SBATCH --time=24:00:00
 #SBATCH --mem=16GB
-#SBATCH --job-name=pretrain
+#SBATCH --job-name=obj_without_pre
 #SBATCH --cpus-per-task=4
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jd4138@nyu.edu
