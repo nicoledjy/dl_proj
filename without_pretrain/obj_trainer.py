@@ -192,7 +192,7 @@ class ObjDetTrainer(Trainer):
         print("Average Validation Epoch Loss: ", np.mean(val_losses))
 
         if save:
-            torch.save(self.model.state_dict(), '/content/drive/My Drive/self_dl/model/classification.pth')
+            torch.save(self.model.state_dict(), '/scratch/jd4138/dl_proj/without_pretrain/classification.pth')
 
         if visualize:
             Transform_coor(out_bbox, gt_offsets, class_target, nms_threshold=0.1, plot=True)
