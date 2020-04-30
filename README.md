@@ -4,7 +4,21 @@
 
 
 
-- Roadmap prediction without pre-training
+- Roadmap prediction without pre-training:
+
+  Use folder `without_pretrain`
+
+  - --batch-size, default=2
+  - --epochs, default=10
+  - --lr, default=1e-4
+  - --weight-decay, default=1e-4
+  - --data-dir, default='../data'
+  - --out-file, default='HRNET_RM_model.pt'
+
+- ```
+  python train_HRNet_RoadMap.py
+  ```
+
 
 
 
