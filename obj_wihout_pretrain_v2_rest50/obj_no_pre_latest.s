@@ -23,6 +23,6 @@ module load cudnn/10.0v7.4.2.24
 conda activate pytorch
 
 
-cd /scratch/jd4138/obj_no_pretrain_latest_50
+cd /scratch/jd4138/obj_no_pre_res50
 
 python main.py --epochs 40
