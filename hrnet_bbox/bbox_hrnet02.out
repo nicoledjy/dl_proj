@@ -1,0 +1,369 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.2
+  latest version: 4.8.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+# All requested packages already installed.
+
+Requirement already satisfied: scipy in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (1.4.1)
+Requirement already satisfied: numpy>=1.13.3 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scipy) (1.18.1)
+Requirement already satisfied: scikit-image in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (0.16.2)
+Requirement already satisfied: networkx>=2.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (2.4)
+Requirement already satisfied: pillow>=4.3.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (7.0.0)
+Requirement already satisfied: matplotlib!=3.0.0,>=2.0.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (3.1.3)
+Requirement already satisfied: scipy>=0.19.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (1.4.1)
+Requirement already satisfied: imageio>=2.3.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (2.8.0)
+Requirement already satisfied: PyWavelets>=0.4.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from scikit-image) (1.1.1)
+Requirement already satisfied: decorator>=4.3.0 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from networkx>=2.0->scikit-image) (4.4.2)
+Requirement already satisfied: numpy>=1.11 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from matplotlib!=3.0.0,>=2.0.0->scikit-image) (1.18.1)
+Requirement already satisfied: cycler>=0.10 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from matplotlib!=3.0.0,>=2.0.0->scikit-image) (0.10.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from matplotlib!=3.0.0,>=2.0.0->scikit-image) (1.1.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.1 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from matplotlib!=3.0.0,>=2.0.0->scikit-image) (2.4.6)
+Requirement already satisfied: python-dateutil>=2.1 in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from matplotlib!=3.0.0,>=2.0.0->scikit-image) (2.8.1)
+Requirement already satisfied: six in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from cycler>=0.10->matplotlib!=3.0.0,>=2.0.0->scikit-image) (1.14.0)
+Requirement already satisfied: setuptools in /home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages (from kiwisolver>=1.0.1->matplotlib!=3.0.0,>=2.0.0->scikit-image) (46.1.3.post20200330)
+========================================================================================
+Current Parameters:
+ epochs = 50,
+ batch_size = 2,
+ lr = 0.0001,
+ weight_decay = 0.0001,
+ output model state_dict will stored at: bbox_hrnet02.pt 
+========================================================================================
+Train Epoch: 0 [0/2772 (0%)]	Loss: 0.258375
+Train Epoch: 0 [100/2772 (0%)]	Loss: 0.090900
+Train Epoch: 0 [200/2772 (1%)]	Loss: 0.058073
+Train Epoch: 0 [300/2772 (1%)]	Loss: 0.033335
+Train Epoch: 0 [400/2772 (1%)]	Loss: 0.028892
+Train Epoch: 0 [500/2772 (2%)]	Loss: 0.033402
+Train Epoch: 0 [600/2772 (2%)]	Loss: 0.020793
+Train Epoch: 0 [700/2772 (3%)]	Loss: 0.012951
+Train Epoch: 0 [800/2772 (3%)]	Loss: 0.033221
+Train Epoch: 0 [900/2772 (3%)]	Loss: 0.010141
+Train Epoch: 0 [1000/2772 (4%)]	Loss: 0.021465
+Train Epoch: 0 [1100/2772 (4%)]	Loss: 0.021195
+Train Epoch: 0 [1200/2772 (4%)]	Loss: 0.021185
+Train Epoch: 0 [1300/2772 (5%)]	Loss: 0.009553
+Train Epoch: 0 [1400/2772 (5%)]	Loss: 0.012727
+Train Epoch: 0 [1500/2772 (5%)]	Loss: 0.031026
+Train Epoch: 0 [1600/2772 (6%)]	Loss: 0.013852
+Train Epoch: 0 [1700/2772 (6%)]	Loss: 0.017836
+Train Epoch: 0 [1800/2772 (6%)]	Loss: 0.021523
+Train Epoch: 0 [1900/2772 (7%)]	Loss: 0.019801
+Train Epoch: 0 [2000/2772 (7%)]	Loss: 0.029015
+Train Epoch: 0 [2100/2772 (8%)]	Loss: 0.022812
+Train Epoch: 0 [2200/2772 (8%)]	Loss: 0.023786
+Train Epoch: 0 [2300/2772 (8%)]	Loss: 0.015052
+Train Epoch: 0 [2400/2772 (9%)]	Loss: 0.018804
+Train Epoch: 0 [2500/2772 (9%)]	Loss: 0.012750
+Train Epoch: 0 [2600/2772 (9%)]	Loss: 0.025850
+Train Epoch: 0 [2700/2772 (10%)]	Loss: 0.017551
+
+Average Train Epoch Loss:  0.02949761740344578
+/home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/functional.py:2973: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/functional.py:2796: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+Average Validation Epoch Loss:  0.02345768811191043
+Average Threat Score:  0.0
+== Saving model at epoch 0 with best AVG Threat Score 0.0 ==
+== Current Validation Loss is 0.02345768811191043 ==
+Train Epoch: 1 [0/2772 (0%)]	Loss: 0.033185
+Train Epoch: 1 [100/2772 (0%)]	Loss: 0.024857
+Train Epoch: 1 [200/2772 (1%)]	Loss: 0.017216
+Train Epoch: 1 [300/2772 (1%)]	Loss: 0.018432
+Train Epoch: 1 [400/2772 (1%)]	Loss: 0.018695
+Train Epoch: 1 [500/2772 (2%)]	Loss: 0.008159
+Train Epoch: 1 [600/2772 (2%)]	Loss: 0.007406
+Train Epoch: 1 [700/2772 (3%)]	Loss: 0.030452
+Train Epoch: 1 [800/2772 (3%)]	Loss: 0.020297
+Train Epoch: 1 [900/2772 (3%)]	Loss: 0.018329
+Train Epoch: 1 [1000/2772 (4%)]	Loss: 0.009543
+Train Epoch: 1 [1100/2772 (4%)]	Loss: 0.003723
+Train Epoch: 1 [1200/2772 (4%)]	Loss: 0.010646
+Train Epoch: 1 [1300/2772 (5%)]	Loss: 0.017152
+Train Epoch: 1 [1400/2772 (5%)]	Loss: 0.025644
+Train Epoch: 1 [1500/2772 (5%)]	Loss: 0.010285
+Train Epoch: 1 [1600/2772 (6%)]	Loss: 0.017101
+Train Epoch: 1 [1700/2772 (6%)]	Loss: 0.012780
+Train Epoch: 1 [1800/2772 (6%)]	Loss: 0.012559
+Train Epoch: 1 [1900/2772 (7%)]	Loss: 0.007122
+Train Epoch: 1 [2000/2772 (7%)]	Loss: 0.006158
+Train Epoch: 1 [2100/2772 (8%)]	Loss: 0.021854
+Train Epoch: 1 [2200/2772 (8%)]	Loss: 0.010742
+Train Epoch: 1 [2300/2772 (8%)]	Loss: 0.014860
+Train Epoch: 1 [2400/2772 (9%)]	Loss: 0.017413
+Train Epoch: 1 [2500/2772 (9%)]	Loss: 0.025473
+Train Epoch: 1 [2600/2772 (9%)]	Loss: 0.011463
+Train Epoch: 1 [2700/2772 (10%)]	Loss: 0.023229
+
+Average Train Epoch Loss:  0.017812240161915533
+Average Validation Epoch Loss:  0.023061736201049475
+Average Threat Score:  0.0
+Train Epoch: 2 [0/2772 (0%)]	Loss: 0.012704
+Train Epoch: 2 [100/2772 (0%)]	Loss: 0.027948
+Train Epoch: 2 [200/2772 (1%)]	Loss: 0.023601
+Train Epoch: 2 [300/2772 (1%)]	Loss: 0.029114
+Train Epoch: 2 [400/2772 (1%)]	Loss: 0.024727
+Train Epoch: 2 [500/2772 (2%)]	Loss: 0.023403
+Train Epoch: 2 [600/2772 (2%)]	Loss: 0.024395
+Train Epoch: 2 [700/2772 (3%)]	Loss: 0.019577
+Train Epoch: 2 [800/2772 (3%)]	Loss: 0.025239
+Train Epoch: 2 [900/2772 (3%)]	Loss: 0.016080
+Train Epoch: 2 [1000/2772 (4%)]	Loss: 0.007291
+Train Epoch: 2 [1100/2772 (4%)]	Loss: 0.014338
+Train Epoch: 2 [1200/2772 (4%)]	Loss: 0.025298
+Train Epoch: 2 [1300/2772 (5%)]	Loss: 0.007072
+Train Epoch: 2 [1400/2772 (5%)]	Loss: 0.022533
+Train Epoch: 2 [1500/2772 (5%)]	Loss: 0.006614
+Train Epoch: 2 [1600/2772 (6%)]	Loss: 0.004220
+Train Epoch: 2 [1700/2772 (6%)]	Loss: 0.023158
+Train Epoch: 2 [1800/2772 (6%)]	Loss: 0.024499
+Train Epoch: 2 [1900/2772 (7%)]	Loss: 0.010348
+Train Epoch: 2 [2000/2772 (7%)]	Loss: 0.022066
+Train Epoch: 2 [2100/2772 (8%)]	Loss: 0.017968
+Train Epoch: 2 [2200/2772 (8%)]	Loss: 0.024653
+Train Epoch: 2 [2300/2772 (8%)]	Loss: 0.017449
+Train Epoch: 2 [2400/2772 (9%)]	Loss: 0.016619
+Train Epoch: 2 [2500/2772 (9%)]	Loss: 0.018142
+Train Epoch: 2 [2600/2772 (9%)]	Loss: 0.006368
+Train Epoch: 2 [2700/2772 (10%)]	Loss: 0.013128
+
+Average Train Epoch Loss:  0.016758336990159193
+Average Validation Epoch Loss:  0.022696596609734037
+Average Threat Score:  0.0
+Train Epoch: 3 [0/2772 (0%)]	Loss: 0.003905
+Train Epoch: 3 [100/2772 (0%)]	Loss: 0.015573
+Train Epoch: 3 [200/2772 (1%)]	Loss: 0.015468
+Train Epoch: 3 [300/2772 (1%)]	Loss: 0.028660
+Train Epoch: 3 [400/2772 (1%)]	Loss: 0.017742
+Train Epoch: 3 [500/2772 (2%)]	Loss: 0.009801
+Train Epoch: 3 [600/2772 (2%)]	Loss: 0.035892
+Train Epoch: 3 [700/2772 (3%)]	Loss: 0.027720
+Train Epoch: 3 [800/2772 (3%)]	Loss: 0.029559
+Train Epoch: 3 [900/2772 (3%)]	Loss: 0.025852
+Train Epoch: 3 [1000/2772 (4%)]	Loss: 0.010999
+Train Epoch: 3 [1100/2772 (4%)]	Loss: 0.022622
+Train Epoch: 3 [1200/2772 (4%)]	Loss: 0.016528
+Train Epoch: 3 [1300/2772 (5%)]	Loss: 0.011019
+Train Epoch: 3 [1400/2772 (5%)]	Loss: 0.017787
+Train Epoch: 3 [1500/2772 (5%)]	Loss: 0.027929
+Train Epoch: 3 [1600/2772 (6%)]	Loss: 0.012816
+Train Epoch: 3 [1700/2772 (6%)]	Loss: 0.024167
+Train Epoch: 3 [1800/2772 (6%)]	Loss: 0.013796
+Train Epoch: 3 [1900/2772 (7%)]	Loss: 0.015737
+Train Epoch: 3 [2000/2772 (7%)]	Loss: 0.009613
+Train Epoch: 3 [2100/2772 (8%)]	Loss: 0.017579
+Train Epoch: 3 [2200/2772 (8%)]	Loss: 0.011061
+Train Epoch: 3 [2300/2772 (8%)]	Loss: 0.019558
+Train Epoch: 3 [2400/2772 (9%)]	Loss: 0.024732
+Train Epoch: 3 [2500/2772 (9%)]	Loss: 0.019580
+Train Epoch: 3 [2600/2772 (9%)]	Loss: 0.017650
+Train Epoch: 3 [2700/2772 (10%)]	Loss: 0.021767
+
+Average Train Epoch Loss:  0.015919928199663345
+Average Validation Epoch Loss:  0.022715467569127522
+Average Threat Score:  0.0
+Train Epoch: 4 [0/2772 (0%)]	Loss: 0.012730
+Train Epoch: 4 [100/2772 (0%)]	Loss: 0.023082
+Train Epoch: 4 [200/2772 (1%)]	Loss: 0.016188
+Train Epoch: 4 [300/2772 (1%)]	Loss: 0.007924
+Train Epoch: 4 [400/2772 (1%)]	Loss: 0.024256
+Train Epoch: 4 [500/2772 (2%)]	Loss: 0.023060
+Train Epoch: 4 [600/2772 (2%)]	Loss: 0.009436
+Train Epoch: 4 [700/2772 (3%)]	Loss: 0.018485
+Train Epoch: 4 [800/2772 (3%)]	Loss: 0.015624
+Train Epoch: 4 [900/2772 (3%)]	Loss: 0.028190
+Train Epoch: 4 [1000/2772 (4%)]	Loss: 0.000886
+Train Epoch: 4 [1100/2772 (4%)]	Loss: 0.011824
+Train Epoch: 4 [1200/2772 (4%)]	Loss: 0.015327
+Train Epoch: 4 [1300/2772 (5%)]	Loss: 0.014069
+Train Epoch: 4 [1400/2772 (5%)]	Loss: 0.002208
+Train Epoch: 4 [1500/2772 (5%)]	Loss: 0.014325
+Train Epoch: 4 [1600/2772 (6%)]	Loss: 0.015664
+Train Epoch: 4 [1700/2772 (6%)]	Loss: 0.006276
+Train Epoch: 4 [1800/2772 (6%)]	Loss: 0.020149
+Train Epoch: 4 [1900/2772 (7%)]	Loss: 0.013616
+Train Epoch: 4 [2000/2772 (7%)]	Loss: 0.005253
+Train Epoch: 4 [2100/2772 (8%)]	Loss: 0.009979
+Train Epoch: 4 [2200/2772 (8%)]	Loss: 0.019063
+Train Epoch: 4 [2300/2772 (8%)]	Loss: 0.016869
+Train Epoch: 4 [2400/2772 (9%)]	Loss: 0.019462
+Train Epoch: 4 [2500/2772 (9%)]	Loss: 0.027357
+Train Epoch: 4 [2600/2772 (9%)]	Loss: 0.013643
+Train Epoch: 4 [2700/2772 (10%)]	Loss: 0.014340
+
+Average Train Epoch Loss:  0.015255207663555165
+Average Validation Epoch Loss:  0.022550672539090984
+Average Threat Score:  0.0
+Train Epoch: 5 [0/2772 (0%)]	Loss: 0.014790
+Train Epoch: 5 [100/2772 (0%)]	Loss: 0.007620
+Train Epoch: 5 [200/2772 (1%)]	Loss: 0.020448
+Train Epoch: 5 [300/2772 (1%)]	Loss: 0.012306
+Train Epoch: 5 [400/2772 (1%)]	Loss: 0.020178
+Train Epoch: 5 [500/2772 (2%)]	Loss: 0.009510
+Train Epoch: 5 [600/2772 (2%)]	Loss: 0.012970
+Train Epoch: 5 [700/2772 (3%)]	Loss: 0.014346
+Train Epoch: 5 [800/2772 (3%)]	Loss: 0.013390
+Train Epoch: 5 [900/2772 (3%)]	Loss: 0.012406
+Train Epoch: 5 [1000/2772 (4%)]	Loss: 0.012346
+Train Epoch: 5 [1100/2772 (4%)]	Loss: 0.004850
+Train Epoch: 5 [1200/2772 (4%)]	Loss: 0.020782
+Train Epoch: 5 [1300/2772 (5%)]	Loss: 0.012202
+Train Epoch: 5 [1400/2772 (5%)]	Loss: 0.023369
+Train Epoch: 5 [1500/2772 (5%)]	Loss: 0.009572
+Train Epoch: 5 [1600/2772 (6%)]	Loss: 0.017662
+Train Epoch: 5 [1700/2772 (6%)]	Loss: 0.011783
+Train Epoch: 5 [1800/2772 (6%)]	Loss: 0.010868
+Train Epoch: 5 [1900/2772 (7%)]	Loss: 0.014852
+Train Epoch: 5 [2000/2772 (7%)]	Loss: 0.017154
+Train Epoch: 5 [2100/2772 (8%)]	Loss: 0.005277
+Train Epoch: 5 [2200/2772 (8%)]	Loss: 0.024611
+Train Epoch: 5 [2300/2772 (8%)]	Loss: 0.011614
+Train Epoch: 5 [2400/2772 (9%)]	Loss: 0.005822
+Train Epoch: 5 [2500/2772 (9%)]	Loss: 0.004485
+Train Epoch: 5 [2600/2772 (9%)]	Loss: 0.012346
+Train Epoch: 5 [2700/2772 (10%)]	Loss: 0.006765
+
+Average Train Epoch Loss:  0.014642332207890628
+Average Validation Epoch Loss:  0.022727758116113446
+Average Threat Score:  0.0
+Train Epoch: 6 [0/2772 (0%)]	Loss: 0.003185
+Train Epoch: 6 [100/2772 (0%)]	Loss: 0.023258
+Train Epoch: 6 [200/2772 (1%)]	Loss: 0.012851
+Train Epoch: 6 [300/2772 (1%)]	Loss: 0.008087
+Train Epoch: 6 [400/2772 (1%)]	Loss: 0.016831
+Train Epoch: 6 [500/2772 (2%)]	Loss: 0.006755
+Train Epoch: 6 [600/2772 (2%)]	Loss: 0.024857
+Train Epoch: 6 [700/2772 (3%)]	Loss: 0.025275
+Train Epoch: 6 [800/2772 (3%)]	Loss: 0.011871
+Train Epoch: 6 [900/2772 (3%)]	Loss: 0.018517
+Train Epoch: 6 [1000/2772 (4%)]	Loss: 0.017360
+Train Epoch: 6 [1100/2772 (4%)]	Loss: 0.012082
+Train Epoch: 6 [1200/2772 (4%)]	Loss: 0.023656
+Train Epoch: 6 [1300/2772 (5%)]	Loss: 0.017010
+Train Epoch: 6 [1400/2772 (5%)]	Loss: 0.004503
+Train Epoch: 6 [1500/2772 (5%)]	Loss: 0.006316
+Train Epoch: 6 [1600/2772 (6%)]	Loss: 0.010684
+Train Epoch: 6 [1700/2772 (6%)]	Loss: 0.017725
+Train Epoch: 6 [1800/2772 (6%)]	Loss: 0.012747
+Train Epoch: 6 [1900/2772 (7%)]	Loss: 0.013200
+Train Epoch: 6 [2000/2772 (7%)]	Loss: 0.012534
+Train Epoch: 6 [2100/2772 (8%)]	Loss: 0.021261
+Train Epoch: 6 [2200/2772 (8%)]	Loss: 0.009376
+Train Epoch: 6 [2300/2772 (8%)]	Loss: 0.012636
+Train Epoch: 6 [2400/2772 (9%)]	Loss: 0.012201
+Train Epoch: 6 [2500/2772 (9%)]	Loss: 0.010629
+Train Epoch: 6 [2600/2772 (9%)]	Loss: 0.026999
+Train Epoch: 6 [2700/2772 (10%)]	Loss: 0.017830
+
+Average Train Epoch Loss:  0.014090710866629868
+Average Validation Epoch Loss:  0.0223868367257257
+Average Threat Score:  0.0
+Train Epoch: 7 [0/2772 (0%)]	Loss: 0.028464
+Train Epoch: 7 [100/2772 (0%)]	Loss: 0.006881
+Train Epoch: 7 [200/2772 (1%)]	Loss: 0.009987
+Train Epoch: 7 [300/2772 (1%)]	Loss: 0.003512
+Train Epoch: 7 [400/2772 (1%)]	Loss: 0.005434
+Train Epoch: 7 [500/2772 (2%)]	Loss: 0.017012
+Train Epoch: 7 [600/2772 (2%)]	Loss: 0.004839
+Train Epoch: 7 [700/2772 (3%)]	Loss: 0.022012
+Train Epoch: 7 [800/2772 (3%)]	Loss: 0.016796
+Train Epoch: 7 [900/2772 (3%)]	Loss: 0.018368
+Train Epoch: 7 [1000/2772 (4%)]	Loss: 0.004708
+Train Epoch: 7 [1100/2772 (4%)]	Loss: 0.017374
+Train Epoch: 7 [1200/2772 (4%)]	Loss: 0.025535
+Train Epoch: 7 [1300/2772 (5%)]	Loss: 0.019448
+Train Epoch: 7 [1400/2772 (5%)]	Loss: 0.029862
+Train Epoch: 7 [1500/2772 (5%)]	Loss: 0.003551
+Train Epoch: 7 [1600/2772 (6%)]	Loss: 0.013807
+Train Epoch: 7 [1700/2772 (6%)]	Loss: 0.022306
+Train Epoch: 7 [1800/2772 (6%)]	Loss: 0.007696
+Train Epoch: 7 [1900/2772 (7%)]	Loss: 0.023249
+Train Epoch: 7 [2000/2772 (7%)]	Loss: 0.015142
+Train Epoch: 7 [2100/2772 (8%)]	Loss: 0.012505
+Train Epoch: 7 [2200/2772 (8%)]	Loss: 0.012751
+Train Epoch: 7 [2300/2772 (8%)]	Loss: 0.021747
+Train Epoch: 7 [2400/2772 (9%)]	Loss: 0.009947
+Train Epoch: 7 [2500/2772 (9%)]	Loss: 0.011608
+Train Epoch: 7 [2600/2772 (9%)]	Loss: 0.004688
+Train Epoch: 7 [2700/2772 (10%)]	Loss: 0.004631
+
+Average Train Epoch Loss:  0.013630321052190504
+Average Validation Epoch Loss:  0.022488553473656928
+Average Threat Score:  1.867361263268524e-05
+== Saving model at epoch 7 with best AVG Threat Score 1.867361263268524e-05 ==
+== Current Validation Loss is 0.022488553473656928 ==
+Train Epoch: 8 [0/2772 (0%)]	Loss: 0.009447
+Train Epoch: 8 [100/2772 (0%)]	Loss: 0.016465
+Train Epoch: 8 [200/2772 (1%)]	Loss: 0.017216
+Train Epoch: 8 [300/2772 (1%)]	Loss: 0.003728
+Train Epoch: 8 [400/2772 (1%)]	Loss: 0.007254
+Train Epoch: 8 [500/2772 (2%)]	Loss: 0.022925
+Train Epoch: 8 [600/2772 (2%)]	Loss: 0.012846
+Train Epoch: 8 [700/2772 (3%)]	Loss: 0.008245
+Train Epoch: 8 [800/2772 (3%)]	Loss: 0.014135
+Train Epoch: 8 [900/2772 (3%)]	Loss: 0.009588
+Train Epoch: 8 [1000/2772 (4%)]	Loss: 0.021639
+Train Epoch: 8 [1100/2772 (4%)]	Loss: 0.014152
+Train Epoch: 8 [1200/2772 (4%)]	Loss: 0.012692
+Train Epoch: 8 [1300/2772 (5%)]	Loss: 0.017050
+Train Epoch: 8 [1400/2772 (5%)]	Loss: 0.010735
+Train Epoch: 8 [1500/2772 (5%)]	Loss: 0.002309
+Train Epoch: 8 [1600/2772 (6%)]	Loss: 0.016979
+Train Epoch: 8 [1700/2772 (6%)]	Loss: 0.009548
+Train Epoch: 8 [1800/2772 (6%)]	Loss: 0.016668
+Train Epoch: 8 [1900/2772 (7%)]	Loss: 0.006404
+Train Epoch: 8 [2000/2772 (7%)]	Loss: 0.018542
+Train Epoch: 8 [2100/2772 (8%)]	Loss: 0.016525
+Train Epoch: 8 [2200/2772 (8%)]	Loss: 0.008681
+Train Epoch: 8 [2300/2772 (8%)]	Loss: 0.024050
+Train Epoch: 8 [2400/2772 (9%)]	Loss: 0.019077
+Train Epoch: 8 [2500/2772 (9%)]	Loss: 0.018232
+Train Epoch: 8 [2600/2772 (9%)]	Loss: 0.007473
+Train Epoch: 8 [2700/2772 (10%)]	Loss: 0.011189
+
+Average Train Epoch Loss:  0.013179210581011064
+Average Validation Epoch Loss:  0.022687653006946362
+Average Threat Score:  0.0
+Train Epoch: 9 [0/2772 (0%)]	Loss: 0.017652
+Train Epoch: 9 [100/2772 (0%)]	Loss: 0.009170
+Train Epoch: 9 [200/2772 (1%)]	Loss: 0.028262
+Train Epoch: 9 [300/2772 (1%)]	Loss: 0.018445
+Train Epoch: 9 [400/2772 (1%)]	Loss: 0.017949
+Train Epoch: 9 [500/2772 (2%)]	Loss: 0.006701
+Train Epoch: 9 [600/2772 (2%)]	Loss: 0.011120
+Train Epoch: 9 [700/2772 (3%)]	Loss: 0.006388
+Train Epoch: 9 [800/2772 (3%)]	Loss: 0.011582
+Train Epoch: 9 [900/2772 (3%)]	Loss: 0.011362
+Train Epoch: 9 [1000/2772 (4%)]	Loss: 0.007825
+Train Epoch: 9 [1100/2772 (4%)]	Loss: 0.011143
+Train Epoch: 9 [1200/2772 (4%)]	Loss: 0.010881
+Train Epoch: 9 [1300/2772 (5%)]	Loss: 0.010034
+Train Epoch: 9 [1400/2772 (5%)]	Loss: 0.016046
+Train Epoch: 9 [1500/2772 (5%)]	Loss: 0.003735
+Train Epoch: 9 [1600/2772 (6%)]	Loss: 0.010066
+Train Epoch: 9 [1700/2772 (6%)]	Loss: 0.013615
+Train Epoch: 9 [1800/2772 (6%)]	Loss: 0.010509
+Train Epoch: 9 [1900/2772 (7%)]	Loss: 0.019911
+Train Epoch: 9 [2000/2772 (7%)]	Loss: 0.008778
+Train Epoch: 9 [2100/2772 (8%)]	Loss: 0.011422
+Train Epoch: 9 [2200/2772 (8%)]	Loss: 0.007573
+Train Epoch: 9 [2300/2772 (8%)]	Loss: 0.009668
+Train Epoch: 9 [2400/2772 (9%)]	Loss: 0.013652
+Train Epoch: 9 [2500/2772 (9%)]	Loss: 0.011162
+Train Epoch: 9 [2600/2772 (9%)]	Loss: 0.002253
+Train Epoch: 9 [2700/2772 (10%)]	Loss: 0.024908
+
+Average Train Epoch Loss:  0.012747230336324057
+Average Validation Epoch Loss:  0.02256347494884813
+Average Threat Score:  1.6895173334334262e-05
