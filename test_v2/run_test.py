@@ -71,18 +71,18 @@ total = 0
 total_ats_bounding_boxes = 0
 total_ts_road_map = 0
 with torch.no_grad():
-    # for i, data in enumerate(dataloader_task1):
-    #     total += 1
-    #     sample, target, road_image = data
-    #     #sample = sample.cuda()
-    #     sample = sample.to('cpu')
+    for i, data in enumerate(dataloader_task1):
+        total += 1
+        sample, target, road_image = data
+        #sample = sample.cuda()
+        sample = sample.to('cpu')
 
-    #     predicted_bounding_boxes = model_loader.get_bounding_boxes(sample)[0].cpu()
-    #     ats_bounding_boxes = compute_ats_bounding_boxes(predicted_bounding_boxes, target['bounding_box'][0])
-    #     total_ats_bounding_boxes += ats_bounding_boxes
+        predicted_bounding_boxes = model_loader.get_bounding_boxes(sample)[0].cpu()
+        ats_bounding_boxes = compute_ats_bounding_boxes(predicted_bounding_boxes, target['bounding_box'][0])
+        total_ats_bounding_boxes += ats_bounding_boxes
 
-    #     if opt.verbose:
-    #         print(f'{i} - Bounding Box Score: {ats_bounding_boxes:.4}')
+        if opt.verbose:
+            print(f'{i} - Bounding Box Score: {ats_bounding_boxes:.4}')
 
     for i, data in enumerate(dataloader_task2):
         sample, target, road_image = data
