@@ -9,3 +9,5 @@ __pycache__/
 
 
 **/PT_FILES/
+data/
+data/**
