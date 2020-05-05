@@ -3,6 +3,7 @@ import matplotlib.patches as patches
 import matplotlib.pyplot as plt 
 from boxes import box_iou, nms
 from helper import compute_ats_bounding_boxes
+import random
 
 
 def get_anchor_boxes(scaleX=[100, 70, 50, 20], scaleY=[25, 20, 15, 5]):
@@ -27,6 +28,61 @@ def get_anchor_boxes(scaleX=[100, 70, 50, 20], scaleY=[25, 20, 15, 5]):
     
     return anchor_boxes
 
+
+def get_coordinate_updated(predicted_offsets, anchor_boxes, batch_sz, nms_threshold=0.1):
+
+    #cur_target = torch.from_numpy(target)
+    #gt_classes = original_gt_classes
+    batch_coor = []
+    original_anchor = anchor_boxes.clone()
+    original_predicted_offsets = predicted_offsets.clone()
+
+    for i in range(batch_sz):
+        anchor_boxes = original_anchor
+        predicted_offsets = original_predicted_offsets[i]
+
+        delta_x = predicted_offsets[:,0]
+        delta_y = predicted_offsets[:,1]
+        delta_scaleX = predicted_offsets[:,2]
+        delta_scaleY = predicted_offsets[:,3]
+
+        gt_widths = anchor_boxes[:, 2] - anchor_boxes[:, 0]
+        gt_heights = anchor_boxes[:, 3] - anchor_boxes[:, 1]
+        gt_center_x = anchor_boxes[:, 0] + 0.5 * gt_widths
+        gt_center_y = anchor_boxes[:, 1] + 0.5 * gt_heights
+
+        ex_width = gt_widths / torch.exp(delta_scaleX)
+        ex_height = gt_heights / torch.exp(delta_scaleY)
+        ex_center_x = gt_center_x - delta_x*ex_width
+        ex_center_y = gt_center_y - delta_y*ex_height
+
+        ex1 = ex_center_x - 0.5*ex_width
+        ex2 = ex_center_x + 0.5*ex_width
+        ey1 = ex_center_y - 0.5*ex_height
+        ey2 = ex_center_y + 0.5*ex_height
+
+
+        pred_boxes = torch.cat([ex1.unsqueeze(0), ey1.unsqueeze(0), ex2.unsqueeze(0), ey2.unsqueeze(0)], dim=0).permute(1,0)
+        pred_boxes = pred_boxes.type(torch.float32)
+   
+        indice = random.sample(range(2560000), 25600)
+        inds = torch.tensor(indice)
+        pred_boxes = pred_boxes[inds]
+
+        coordinate_list = []
+
+        for box in pred_boxes:
+            x1, y1, x2, y2 = box[0], box[1], box[2], box[3]
+            x1 = (x1-400)/10
+            x2 = (x2-400)/10
+            y1 = (y1-400)/-10
+            y2 = (y2-400)/-10
+            width = abs(x1 - x2)
+            height = abs(y1 - y2)
+            coordinate_list.append(torch.tensor([x2, x2, x1, x1, y2, y1, y2, y1]).view(-1, 4)) 
+        coordinate_list = torch.stack(coordinate_list)
+        batch_coor.append(coordinate_list)
+    return batch_coor
 
 
 def get_coordinate(predicted_offsets, anchor_boxes, gt_classes, nms_threshold=0.1):

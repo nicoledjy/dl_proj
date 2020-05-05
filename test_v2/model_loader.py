@@ -12,7 +12,7 @@ import torchvision
 # import ...
 from obj_model import BoundingBox
 from hrnet import get_seg_model, get_config
-from anchors import get_coordinate, get_anchor_boxes
+from anchors import get_coordinate_updated, get_anchor_boxes
 
 # Put your transform function here, we will use it for our dataloader
 # For bounding boxes task
@@ -55,12 +55,7 @@ class ModelLoader():
         out_pred, out_bbox = self.model2(samples)
         out_bbox = out_bbox.view(self.batch_size, -1, 4)
 
-        anchor_boxes = get_anchor_boxes()
-        shape_i = anchor_boxes.shape[0]
-        gt_classes = torch.zeros((shape_i)).type(torch.long).to(self.device)
-        
-        pred_coor = get_coordinate(out_bbox[0], anchor_boxes, gt_classes, nms_threshold=0.1)
-
+        pred_coor = get_coordinate_updated(out_bbox, get_anchor_boxes(), self.batch_size, nms_threshold=0.1)
         #return torch.rand(1, 15, 2, 4) * 10
         return pred_coor
 
