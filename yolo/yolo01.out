@@ -1,0 +1,1276 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.2
+  latest version: 4.8.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+# All requested packages already installed.
+
+Train Epoch: 0 [0/2772 (0%)]	Loss: 45.316071
+Train Epoch: 0 [100/2772 (0%)]	Loss: 17.623360
+Train Epoch: 0 [200/2772 (1%)]	Loss: 11.779023
+Train Epoch: 0 [300/2772 (1%)]	Loss: 12.237515
+Train Epoch: 0 [400/2772 (1%)]	Loss: 14.438250
+Train Epoch: 0 [500/2772 (2%)]	Loss: 18.619833
+Train Epoch: 0 [600/2772 (2%)]	Loss: 19.539488
+Train Epoch: 0 [700/2772 (3%)]	Loss: 13.506707
+Train Epoch: 0 [800/2772 (3%)]	Loss: 10.463487
+Train Epoch: 0 [900/2772 (3%)]	Loss: 17.854877
+Train Epoch: 0 [1000/2772 (4%)]	Loss: 10.070164
+Train Epoch: 0 [1100/2772 (4%)]	Loss: 14.999268
+Train Epoch: 0 [1200/2772 (4%)]	Loss: 20.983168
+Train Epoch: 0 [1300/2772 (5%)]	Loss: 20.366829
+Train Epoch: 0 [1400/2772 (5%)]	Loss: 11.762510
+Train Epoch: 0 [1500/2772 (5%)]	Loss: 7.971381
+Train Epoch: 0 [1600/2772 (6%)]	Loss: 24.619125
+Train Epoch: 0 [1700/2772 (6%)]	Loss: 23.314545
+Train Epoch: 0 [1800/2772 (6%)]	Loss: 18.020248
+Train Epoch: 0 [1900/2772 (7%)]	Loss: 15.668618
+Train Epoch: 0 [2000/2772 (7%)]	Loss: 11.686697
+Train Epoch: 0 [2100/2772 (8%)]	Loss: 12.917830
+Train Epoch: 0 [2200/2772 (8%)]	Loss: 9.660213
+Train Epoch: 0 [2300/2772 (8%)]	Loss: 6.506092
+Train Epoch: 0 [2400/2772 (9%)]	Loss: 9.610833
+Train Epoch: 0 [2500/2772 (9%)]	Loss: 15.182964
+Train Epoch: 0 [2600/2772 (9%)]	Loss: 12.205059
+Train Epoch: 0 [2700/2772 (10%)]	Loss: 12.915758
+
+Average Train Epoch Loss:  16.640993261406088
+Val Epoch: 0 [0/756 (0%)]	Average Loss So Far: 18.789747
+Val Epoch: 0 [100/756 (1%)]	Average Loss So Far: 19.550768
+Val Epoch: 0 [200/756 (1%)]	Average Loss So Far: 19.288822
+Val Epoch: 0 [300/756 (2%)]	Average Loss So Far: 19.474218
+Val Epoch: 0 [400/756 (3%)]	Average Loss So Far: 19.419216
+Val Epoch: 0 [500/756 (3%)]	Average Loss So Far: 19.237934
+Val Epoch: 0 [600/756 (4%)]	Average Loss So Far: 19.244770
+Val Epoch: 0 [700/756 (5%)]	Average Loss So Far: 19.179153
+Average Validation Epoch Loss:  19.10333650074308
+Average Threat Score: 0.002088530942004312 
+Train Epoch: 1 [0/2772 (0%)]	Loss: 10.388654
+Train Epoch: 1 [100/2772 (0%)]	Loss: 13.379088
+Train Epoch: 1 [200/2772 (1%)]	Loss: 5.616256
+Train Epoch: 1 [300/2772 (1%)]	Loss: 24.033730
+Train Epoch: 1 [400/2772 (1%)]	Loss: 18.071075
+Train Epoch: 1 [500/2772 (2%)]	Loss: 17.678795
+Train Epoch: 1 [600/2772 (2%)]	Loss: 7.588858
+Train Epoch: 1 [700/2772 (3%)]	Loss: 19.147495
+Train Epoch: 1 [800/2772 (3%)]	Loss: 10.586220
+Train Epoch: 1 [900/2772 (3%)]	Loss: 10.429487
+Train Epoch: 1 [1000/2772 (4%)]	Loss: 11.690908
+Train Epoch: 1 [1100/2772 (4%)]	Loss: 15.761615
+Train Epoch: 1 [1200/2772 (4%)]	Loss: 18.342247
+Train Epoch: 1 [1300/2772 (5%)]	Loss: 7.376695
+Train Epoch: 1 [1400/2772 (5%)]	Loss: 19.912710
+Train Epoch: 1 [1500/2772 (5%)]	Loss: 13.167767
+Train Epoch: 1 [1600/2772 (6%)]	Loss: 14.315295
+Train Epoch: 1 [1700/2772 (6%)]	Loss: 13.269420
+Train Epoch: 1 [1800/2772 (6%)]	Loss: 17.055738
+Train Epoch: 1 [1900/2772 (7%)]	Loss: 16.507320
+Train Epoch: 1 [2000/2772 (7%)]	Loss: 8.973391
+Train Epoch: 1 [2100/2772 (8%)]	Loss: 7.491497
+Train Epoch: 1 [2200/2772 (8%)]	Loss: 15.160734
+Train Epoch: 1 [2300/2772 (8%)]	Loss: 12.446857
+Train Epoch: 1 [2400/2772 (9%)]	Loss: 11.645741
+Train Epoch: 1 [2500/2772 (9%)]	Loss: 11.840672
+Train Epoch: 1 [2600/2772 (9%)]	Loss: 9.368394
+Train Epoch: 1 [2700/2772 (10%)]	Loss: 15.424114
+
+Average Train Epoch Loss:  14.121663519830415
+Val Epoch: 1 [0/756 (0%)]	Average Loss So Far: 16.196869
+Val Epoch: 1 [100/756 (1%)]	Average Loss So Far: 18.717309
+Val Epoch: 1 [200/756 (1%)]	Average Loss So Far: 17.993750
+Val Epoch: 1 [300/756 (2%)]	Average Loss So Far: 18.208702
+Val Epoch: 1 [400/756 (3%)]	Average Loss So Far: 17.950463
+Val Epoch: 1 [500/756 (3%)]	Average Loss So Far: 18.207182
+Val Epoch: 1 [600/756 (4%)]	Average Loss So Far: 18.249114
+Val Epoch: 1 [700/756 (5%)]	Average Loss So Far: 18.296419
+Average Validation Epoch Loss:  18.14048583797677
+Average Threat Score: 0.0016826110480540487 
+Train Epoch: 2 [0/2772 (0%)]	Loss: 5.218144
+Train Epoch: 2 [100/2772 (0%)]	Loss: 15.567110
+Train Epoch: 2 [200/2772 (1%)]	Loss: 10.313334
+Train Epoch: 2 [300/2772 (1%)]	Loss: 16.472342
+Train Epoch: 2 [400/2772 (1%)]	Loss: 14.190168
+Train Epoch: 2 [500/2772 (2%)]	Loss: 8.591448
+Train Epoch: 2 [600/2772 (2%)]	Loss: 27.045494
+Train Epoch: 2 [700/2772 (3%)]	Loss: 11.782696
+Train Epoch: 2 [800/2772 (3%)]	Loss: 19.943600
+Train Epoch: 2 [900/2772 (3%)]	Loss: 23.713890
+Train Epoch: 2 [1000/2772 (4%)]	Loss: 17.405302
+Train Epoch: 2 [1100/2772 (4%)]	Loss: 11.842031
+Train Epoch: 2 [1200/2772 (4%)]	Loss: 18.306107
+Train Epoch: 2 [1300/2772 (5%)]	Loss: 16.044096
+Train Epoch: 2 [1400/2772 (5%)]	Loss: 7.664432
+Train Epoch: 2 [1500/2772 (5%)]	Loss: 16.635027
+Train Epoch: 2 [1600/2772 (6%)]	Loss: 8.349427
+Train Epoch: 2 [1700/2772 (6%)]	Loss: 14.221269
+Train Epoch: 2 [1800/2772 (6%)]	Loss: 8.717196
+Train Epoch: 2 [1900/2772 (7%)]	Loss: 10.290573
+Train Epoch: 2 [2000/2772 (7%)]	Loss: 12.313047
+Train Epoch: 2 [2100/2772 (8%)]	Loss: 13.070873
+Train Epoch: 2 [2200/2772 (8%)]	Loss: 8.415346
+Train Epoch: 2 [2300/2772 (8%)]	Loss: 16.153463
+Train Epoch: 2 [2400/2772 (9%)]	Loss: 13.275139
+Train Epoch: 2 [2500/2772 (9%)]	Loss: 11.109659
+Train Epoch: 2 [2600/2772 (9%)]	Loss: 11.649347
+Train Epoch: 2 [2700/2772 (10%)]	Loss: 12.312523
+
+Average Train Epoch Loss:  13.997070550918579
+Val Epoch: 2 [0/756 (0%)]	Average Loss So Far: 14.893965
+Val Epoch: 2 [100/756 (1%)]	Average Loss So Far: 19.443800
+Val Epoch: 2 [200/756 (1%)]	Average Loss So Far: 19.263282
+Val Epoch: 2 [300/756 (2%)]	Average Loss So Far: 18.994455
+Val Epoch: 2 [400/756 (3%)]	Average Loss So Far: 18.917870
+Val Epoch: 2 [500/756 (3%)]	Average Loss So Far: 18.998392
+Val Epoch: 2 [600/756 (4%)]	Average Loss So Far: 18.905254
+Val Epoch: 2 [700/756 (5%)]	Average Loss So Far: 19.119068
+Average Validation Epoch Loss:  19.074831953755133
+Average Threat Score: 0.002042034425324312 
+Train Epoch: 3 [0/2772 (0%)]	Loss: 7.858089
+Train Epoch: 3 [100/2772 (0%)]	Loss: 15.850545
+Train Epoch: 3 [200/2772 (1%)]	Loss: 18.905037
+Train Epoch: 3 [300/2772 (1%)]	Loss: 20.204678
+Train Epoch: 3 [400/2772 (1%)]	Loss: 9.558645
+Train Epoch: 3 [500/2772 (2%)]	Loss: 14.813770
+Train Epoch: 3 [600/2772 (2%)]	Loss: 13.698412
+Train Epoch: 3 [700/2772 (3%)]	Loss: 8.459053
+Train Epoch: 3 [800/2772 (3%)]	Loss: 9.439523
+Train Epoch: 3 [900/2772 (3%)]	Loss: 11.111866
+Train Epoch: 3 [1000/2772 (4%)]	Loss: 5.741876
+Train Epoch: 3 [1100/2772 (4%)]	Loss: 14.533748
+Train Epoch: 3 [1200/2772 (4%)]	Loss: 10.101560
+Train Epoch: 3 [1300/2772 (5%)]	Loss: 6.832878
+Train Epoch: 3 [1400/2772 (5%)]	Loss: 11.619232
+Train Epoch: 3 [1500/2772 (5%)]	Loss: 15.394646
+Train Epoch: 3 [1600/2772 (6%)]	Loss: 12.461659
+Train Epoch: 3 [1700/2772 (6%)]	Loss: 10.378086
+Train Epoch: 3 [1800/2772 (6%)]	Loss: 13.816015
+Train Epoch: 3 [1900/2772 (7%)]	Loss: 19.485245
+Train Epoch: 3 [2000/2772 (7%)]	Loss: 12.242163
+Train Epoch: 3 [2100/2772 (8%)]	Loss: 9.817646
+Train Epoch: 3 [2200/2772 (8%)]	Loss: 11.734166
+Train Epoch: 3 [2300/2772 (8%)]	Loss: 5.637547
+Train Epoch: 3 [2400/2772 (9%)]	Loss: 9.047433
+Train Epoch: 3 [2500/2772 (9%)]	Loss: 9.498620
+Train Epoch: 3 [2600/2772 (9%)]	Loss: 11.821996
+Train Epoch: 3 [2700/2772 (10%)]	Loss: 15.057644
+
+Average Train Epoch Loss:  13.698424484650639
+Val Epoch: 3 [0/756 (0%)]	Average Loss So Far: 11.301117
+Val Epoch: 3 [100/756 (1%)]	Average Loss So Far: 18.552362
+Val Epoch: 3 [200/756 (1%)]	Average Loss So Far: 18.995863
+Val Epoch: 3 [300/756 (2%)]	Average Loss So Far: 18.620263
+Val Epoch: 3 [400/756 (3%)]	Average Loss So Far: 18.410353
+Val Epoch: 3 [500/756 (3%)]	Average Loss So Far: 18.409069
+Val Epoch: 3 [600/756 (4%)]	Average Loss So Far: 18.561049
+Val Epoch: 3 [700/756 (5%)]	Average Loss So Far: 18.663055
+Average Validation Epoch Loss:  18.651593681365725
+Average Threat Score: 0.0009265182639605232 
+Train Epoch: 4 [0/2772 (0%)]	Loss: 11.717760
+Train Epoch: 4 [100/2772 (0%)]	Loss: 11.928318
+Train Epoch: 4 [200/2772 (1%)]	Loss: 13.274363
+Train Epoch: 4 [300/2772 (1%)]	Loss: 3.252279
+Train Epoch: 4 [400/2772 (1%)]	Loss: 21.606661
+Train Epoch: 4 [500/2772 (2%)]	Loss: 19.306944
+Train Epoch: 4 [600/2772 (2%)]	Loss: 8.014756
+Train Epoch: 4 [700/2772 (3%)]	Loss: 7.001009
+Train Epoch: 4 [800/2772 (3%)]	Loss: 20.407055
+Train Epoch: 4 [900/2772 (3%)]	Loss: 6.943899
+Train Epoch: 4 [1000/2772 (4%)]	Loss: 23.897442
+Train Epoch: 4 [1100/2772 (4%)]	Loss: 5.438509
+Train Epoch: 4 [1200/2772 (4%)]	Loss: 10.584311
+Train Epoch: 4 [1300/2772 (5%)]	Loss: 10.464593
+Train Epoch: 4 [1400/2772 (5%)]	Loss: 7.627468
+Train Epoch: 4 [1500/2772 (5%)]	Loss: 17.734892
+Train Epoch: 4 [1600/2772 (6%)]	Loss: 21.413189
+Train Epoch: 4 [1700/2772 (6%)]	Loss: 9.927775
+Train Epoch: 4 [1800/2772 (6%)]	Loss: 5.984693
+Train Epoch: 4 [1900/2772 (7%)]	Loss: 6.262354
+Train Epoch: 4 [2000/2772 (7%)]	Loss: 14.254253
+Train Epoch: 4 [2100/2772 (8%)]	Loss: 10.970998
+Train Epoch: 4 [2200/2772 (8%)]	Loss: 11.787058
+Train Epoch: 4 [2300/2772 (8%)]	Loss: 14.611366
+Train Epoch: 4 [2400/2772 (9%)]	Loss: 14.805038
+Train Epoch: 4 [2500/2772 (9%)]	Loss: 10.821860
+Train Epoch: 4 [2600/2772 (9%)]	Loss: 10.167742
+Train Epoch: 4 [2700/2772 (10%)]	Loss: 15.294762
+
+Average Train Epoch Loss:  12.741471748761457
+Val Epoch: 4 [0/756 (0%)]	Average Loss So Far: 20.789986
+Val Epoch: 4 [100/756 (1%)]	Average Loss So Far: 19.376190
+Val Epoch: 4 [200/756 (1%)]	Average Loss So Far: 18.564950
+Val Epoch: 4 [300/756 (2%)]	Average Loss So Far: 18.317439
+Val Epoch: 4 [400/756 (3%)]	Average Loss So Far: 18.310028
+Val Epoch: 4 [500/756 (3%)]	Average Loss So Far: 18.307817
+Val Epoch: 4 [600/756 (4%)]	Average Loss So Far: 18.346734
+Val Epoch: 4 [700/756 (5%)]	Average Loss So Far: 18.368337
+Average Validation Epoch Loss:  18.384386494046165
+Average Threat Score: 0.00422726778643669 
+Train Epoch: 5 [0/2772 (0%)]	Loss: 12.238130
+Train Epoch: 5 [100/2772 (0%)]	Loss: 13.789795
+Train Epoch: 5 [200/2772 (1%)]	Loss: 15.768460
+Train Epoch: 5 [300/2772 (1%)]	Loss: 9.690029
+Train Epoch: 5 [400/2772 (1%)]	Loss: 24.593262
+Train Epoch: 5 [500/2772 (2%)]	Loss: 12.081506
+Train Epoch: 5 [600/2772 (2%)]	Loss: 11.826283
+Train Epoch: 5 [700/2772 (3%)]	Loss: 22.200228
+Train Epoch: 5 [800/2772 (3%)]	Loss: 15.998869
+Train Epoch: 5 [900/2772 (3%)]	Loss: 8.224401
+Train Epoch: 5 [1000/2772 (4%)]	Loss: 21.125040
+Train Epoch: 5 [1100/2772 (4%)]	Loss: 7.446114
+Train Epoch: 5 [1200/2772 (4%)]	Loss: 15.225905
+Train Epoch: 5 [1300/2772 (5%)]	Loss: 4.273153
+Train Epoch: 5 [1400/2772 (5%)]	Loss: 10.062615
+Train Epoch: 5 [1500/2772 (5%)]	Loss: 4.988505
+Train Epoch: 5 [1600/2772 (6%)]	Loss: 18.944695
+Train Epoch: 5 [1700/2772 (6%)]	Loss: 9.920101
+Train Epoch: 5 [1800/2772 (6%)]	Loss: 12.499125
+Train Epoch: 5 [1900/2772 (7%)]	Loss: 5.808136
+Train Epoch: 5 [2000/2772 (7%)]	Loss: 11.640516
+Train Epoch: 5 [2100/2772 (8%)]	Loss: 16.791859
+Train Epoch: 5 [2200/2772 (8%)]	Loss: 19.877819
+Train Epoch: 5 [2300/2772 (8%)]	Loss: 6.934047
+Train Epoch: 5 [2400/2772 (9%)]	Loss: 3.556399
+Train Epoch: 5 [2500/2772 (9%)]	Loss: 25.210615
+Train Epoch: 5 [2600/2772 (9%)]	Loss: 19.121054
+Train Epoch: 5 [2700/2772 (10%)]	Loss: 11.554161
+
+Average Train Epoch Loss:  11.962854435089518
+Val Epoch: 5 [0/756 (0%)]	Average Loss So Far: 22.694660
+Val Epoch: 5 [100/756 (1%)]	Average Loss So Far: 19.522390
+Val Epoch: 5 [200/756 (1%)]	Average Loss So Far: 18.366264
+Val Epoch: 5 [300/756 (2%)]	Average Loss So Far: 18.285036
+Val Epoch: 5 [400/756 (3%)]	Average Loss So Far: 18.719563
+Val Epoch: 5 [500/756 (3%)]	Average Loss So Far: 18.794492
+Val Epoch: 5 [600/756 (4%)]	Average Loss So Far: 18.671105
+Val Epoch: 5 [700/756 (5%)]	Average Loss So Far: 18.694875
+Average Validation Epoch Loss:  18.753828290909055
+Average Threat Score: 0.0025319013382411664 
+Train Epoch: 6 [0/2772 (0%)]	Loss: 5.690539
+Train Epoch: 6 [100/2772 (0%)]	Loss: 10.878009
+Train Epoch: 6 [200/2772 (1%)]	Loss: 9.343508
+Train Epoch: 6 [300/2772 (1%)]	Loss: 10.638542
+Train Epoch: 6 [400/2772 (1%)]	Loss: 16.006142
+Train Epoch: 6 [500/2772 (2%)]	Loss: 9.654478
+Train Epoch: 6 [600/2772 (2%)]	Loss: 15.021235
+Train Epoch: 6 [700/2772 (3%)]	Loss: 2.003860
+Train Epoch: 6 [800/2772 (3%)]	Loss: 6.814601
+Train Epoch: 6 [900/2772 (3%)]	Loss: 11.591765
+Train Epoch: 6 [1000/2772 (4%)]	Loss: 12.440053
+Train Epoch: 6 [1100/2772 (4%)]	Loss: 12.688251
+Train Epoch: 6 [1200/2772 (4%)]	Loss: 24.755817
+Train Epoch: 6 [1300/2772 (5%)]	Loss: 19.730820
+Train Epoch: 6 [1400/2772 (5%)]	Loss: 6.223491
+Train Epoch: 6 [1500/2772 (5%)]	Loss: 10.599483
+Train Epoch: 6 [1600/2772 (6%)]	Loss: 11.563077
+Train Epoch: 6 [1700/2772 (6%)]	Loss: 13.687080
+Train Epoch: 6 [1800/2772 (6%)]	Loss: 15.624393
+Train Epoch: 6 [1900/2772 (7%)]	Loss: 15.463144
+Train Epoch: 6 [2000/2772 (7%)]	Loss: 10.966492
+Train Epoch: 6 [2100/2772 (8%)]	Loss: 4.076406
+Train Epoch: 6 [2200/2772 (8%)]	Loss: 12.534806
+Train Epoch: 6 [2300/2772 (8%)]	Loss: 7.058903
+Train Epoch: 6 [2400/2772 (9%)]	Loss: 4.340677
+Train Epoch: 6 [2500/2772 (9%)]	Loss: 9.065259
+Train Epoch: 6 [2600/2772 (9%)]	Loss: 18.878769
+Train Epoch: 6 [2700/2772 (10%)]	Loss: 9.735344
+
+Average Train Epoch Loss:  11.293463680823299
+Val Epoch: 6 [0/756 (0%)]	Average Loss So Far: 17.804157
+Val Epoch: 6 [100/756 (1%)]	Average Loss So Far: 18.132819
+Val Epoch: 6 [200/756 (1%)]	Average Loss So Far: 18.124766
+Val Epoch: 6 [300/756 (2%)]	Average Loss So Far: 18.172908
+Val Epoch: 6 [400/756 (3%)]	Average Loss So Far: 18.193877
+Val Epoch: 6 [500/756 (3%)]	Average Loss So Far: 18.299215
+Val Epoch: 6 [600/756 (4%)]	Average Loss So Far: 18.234006
+Val Epoch: 6 [700/756 (5%)]	Average Loss So Far: 18.320682
+Average Validation Epoch Loss:  18.262851788253382
+Average Threat Score: 0.002409592240053431 
+Train Epoch: 7 [0/2772 (0%)]	Loss: 4.866153
+Train Epoch: 7 [100/2772 (0%)]	Loss: 13.602191
+Train Epoch: 7 [200/2772 (1%)]	Loss: 6.740420
+Train Epoch: 7 [300/2772 (1%)]	Loss: 11.657896
+Train Epoch: 7 [400/2772 (1%)]	Loss: 10.134694
+Train Epoch: 7 [500/2772 (2%)]	Loss: 4.764126
+Train Epoch: 7 [600/2772 (2%)]	Loss: 14.400940
+Train Epoch: 7 [700/2772 (3%)]	Loss: 10.765767
+Train Epoch: 7 [800/2772 (3%)]	Loss: 8.731792
+Train Epoch: 7 [900/2772 (3%)]	Loss: 9.774334
+Train Epoch: 7 [1000/2772 (4%)]	Loss: 5.972978
+Train Epoch: 7 [1100/2772 (4%)]	Loss: 13.362181
+Train Epoch: 7 [1200/2772 (4%)]	Loss: 9.186467
+Train Epoch: 7 [1300/2772 (5%)]	Loss: 10.341560
+Train Epoch: 7 [1400/2772 (5%)]	Loss: 6.673274
+Train Epoch: 7 [1500/2772 (5%)]	Loss: 5.918807
+Train Epoch: 7 [1600/2772 (6%)]	Loss: 12.204542
+Train Epoch: 7 [1700/2772 (6%)]	Loss: 13.915189
+Train Epoch: 7 [1800/2772 (6%)]	Loss: 11.541096
+Train Epoch: 7 [1900/2772 (7%)]	Loss: 12.061604
+Train Epoch: 7 [2000/2772 (7%)]	Loss: 10.719505
+Train Epoch: 7 [2100/2772 (8%)]	Loss: 11.621222
+Train Epoch: 7 [2200/2772 (8%)]	Loss: 11.692413
+Train Epoch: 7 [2300/2772 (8%)]	Loss: 10.074022
+Train Epoch: 7 [2400/2772 (9%)]	Loss: 6.885554
+Train Epoch: 7 [2500/2772 (9%)]	Loss: 6.419340
+Train Epoch: 7 [2600/2772 (9%)]	Loss: 13.184887
+Train Epoch: 7 [2700/2772 (10%)]	Loss: 7.272121
+
+Average Train Epoch Loss:  10.653855764246606
+Val Epoch: 7 [0/756 (0%)]	Average Loss So Far: 21.216951
+Val Epoch: 7 [100/756 (1%)]	Average Loss So Far: 19.665772
+Val Epoch: 7 [200/756 (1%)]	Average Loss So Far: 18.924795
+Val Epoch: 7 [300/756 (2%)]	Average Loss So Far: 18.889787
+Val Epoch: 7 [400/756 (3%)]	Average Loss So Far: 18.632648
+Val Epoch: 7 [500/756 (3%)]	Average Loss So Far: 18.777570
+Val Epoch: 7 [600/756 (4%)]	Average Loss So Far: 18.549279
+Val Epoch: 7 [700/756 (5%)]	Average Loss So Far: 18.612669
+Average Validation Epoch Loss:  18.513812767765508
+Average Threat Score: 0.001716408152970924 
+Train Epoch: 8 [0/2772 (0%)]	Loss: 9.316721
+Train Epoch: 8 [100/2772 (0%)]	Loss: 10.771640
+Train Epoch: 8 [200/2772 (1%)]	Loss: 12.328438
+Train Epoch: 8 [300/2772 (1%)]	Loss: 14.819483
+Train Epoch: 8 [400/2772 (1%)]	Loss: 10.137539
+Train Epoch: 8 [500/2772 (2%)]	Loss: 7.675245
+Train Epoch: 8 [600/2772 (2%)]	Loss: 5.868161
+Train Epoch: 8 [700/2772 (3%)]	Loss: 11.455412
+Train Epoch: 8 [800/2772 (3%)]	Loss: 11.122333
+Train Epoch: 8 [900/2772 (3%)]	Loss: 10.004437
+Train Epoch: 8 [1000/2772 (4%)]	Loss: 10.379889
+Train Epoch: 8 [1100/2772 (4%)]	Loss: 10.098508
+Train Epoch: 8 [1200/2772 (4%)]	Loss: 15.099499
+Train Epoch: 8 [1300/2772 (5%)]	Loss: 7.523675
+Train Epoch: 8 [1400/2772 (5%)]	Loss: 18.623722
+Train Epoch: 8 [1500/2772 (5%)]	Loss: 12.656101
+Train Epoch: 8 [1600/2772 (6%)]	Loss: 14.696959
+Train Epoch: 8 [1700/2772 (6%)]	Loss: 13.720906
+Train Epoch: 8 [1800/2772 (6%)]	Loss: 2.279732
+Train Epoch: 8 [1900/2772 (7%)]	Loss: 1.833186
+Train Epoch: 8 [2000/2772 (7%)]	Loss: 5.024251
+Train Epoch: 8 [2100/2772 (8%)]	Loss: 14.611223
+Train Epoch: 8 [2200/2772 (8%)]	Loss: 9.426824
+Train Epoch: 8 [2300/2772 (8%)]	Loss: 8.217441
+Train Epoch: 8 [2400/2772 (9%)]	Loss: 5.067308
+Train Epoch: 8 [2500/2772 (9%)]	Loss: 7.122715
+Train Epoch: 8 [2600/2772 (9%)]	Loss: 6.942134
+Train Epoch: 8 [2700/2772 (10%)]	Loss: 16.109215
+
+Average Train Epoch Loss:  10.052041657129235
+Val Epoch: 8 [0/756 (0%)]	Average Loss So Far: 28.653694
+Val Epoch: 8 [100/756 (1%)]	Average Loss So Far: 17.634260
+Val Epoch: 8 [200/756 (1%)]	Average Loss So Far: 18.319509
+Val Epoch: 8 [300/756 (2%)]	Average Loss So Far: 18.367625
+Val Epoch: 8 [400/756 (3%)]	Average Loss So Far: 18.212788
+Val Epoch: 8 [500/756 (3%)]	Average Loss So Far: 18.495406
+Val Epoch: 8 [600/756 (4%)]	Average Loss So Far: 18.384533
+Val Epoch: 8 [700/756 (5%)]	Average Loss So Far: 18.742142
+Average Validation Epoch Loss:  18.713429809247376
+Average Threat Score: 0.0022538210004789845 
+Train Epoch: 9 [0/2772 (0%)]	Loss: 11.528244
+Train Epoch: 9 [100/2772 (0%)]	Loss: 6.002516
+Train Epoch: 9 [200/2772 (1%)]	Loss: 6.798876
+Train Epoch: 9 [300/2772 (1%)]	Loss: 4.662573
+Train Epoch: 9 [400/2772 (1%)]	Loss: 9.834696
+Train Epoch: 9 [500/2772 (2%)]	Loss: 15.007294
+Train Epoch: 9 [600/2772 (2%)]	Loss: 8.318713
+Train Epoch: 9 [700/2772 (3%)]	Loss: 12.906687
+Train Epoch: 9 [800/2772 (3%)]	Loss: 16.966026
+Train Epoch: 9 [900/2772 (3%)]	Loss: 4.778767
+Train Epoch: 9 [1000/2772 (4%)]	Loss: 13.363380
+Train Epoch: 9 [1100/2772 (4%)]	Loss: 12.292385
+Train Epoch: 9 [1200/2772 (4%)]	Loss: 5.933634
+Train Epoch: 9 [1300/2772 (5%)]	Loss: 10.585281
+Train Epoch: 9 [1400/2772 (5%)]	Loss: 7.110688
+Train Epoch: 9 [1500/2772 (5%)]	Loss: 9.196840
+Train Epoch: 9 [1600/2772 (6%)]	Loss: 7.326606
+Train Epoch: 9 [1700/2772 (6%)]	Loss: 13.488895
+Train Epoch: 9 [1800/2772 (6%)]	Loss: 6.270425
+Train Epoch: 9 [1900/2772 (7%)]	Loss: 9.229953
+Train Epoch: 9 [2000/2772 (7%)]	Loss: 13.795125
+Train Epoch: 9 [2100/2772 (8%)]	Loss: 11.350137
+Train Epoch: 9 [2200/2772 (8%)]	Loss: 9.200655
+Train Epoch: 9 [2300/2772 (8%)]	Loss: 4.106671
+Train Epoch: 9 [2400/2772 (9%)]	Loss: 7.151591
+Train Epoch: 9 [2500/2772 (9%)]	Loss: 5.578205
+Train Epoch: 9 [2600/2772 (9%)]	Loss: 15.346564
+Train Epoch: 9 [2700/2772 (10%)]	Loss: 4.443571
+
+Average Train Epoch Loss:  9.464972129330835
+Val Epoch: 9 [0/756 (0%)]	Average Loss So Far: 12.817857
+Val Epoch: 9 [100/756 (1%)]	Average Loss So Far: 18.635902
+Val Epoch: 9 [200/756 (1%)]	Average Loss So Far: 17.992045
+Val Epoch: 9 [300/756 (2%)]	Average Loss So Far: 18.149497
+Val Epoch: 9 [400/756 (3%)]	Average Loss So Far: 18.251505
+Val Epoch: 9 [500/756 (3%)]	Average Loss So Far: 18.393690
+Val Epoch: 9 [600/756 (4%)]	Average Loss So Far: 18.318614
+Val Epoch: 9 [700/756 (5%)]	Average Loss So Far: 18.442985
+Average Validation Epoch Loss:  18.403863283692214
+Average Threat Score: 0.0017855068432812693 
+Train Epoch: 10 [0/2772 (0%)]	Loss: 6.743668
+Train Epoch: 10 [100/2772 (0%)]	Loss: 7.571863
+Train Epoch: 10 [200/2772 (1%)]	Loss: 9.056748
+Train Epoch: 10 [300/2772 (1%)]	Loss: 9.100389
+Train Epoch: 10 [400/2772 (1%)]	Loss: 12.306184
+Train Epoch: 10 [500/2772 (2%)]	Loss: 3.392319
+Train Epoch: 10 [600/2772 (2%)]	Loss: 13.204275
+Train Epoch: 10 [700/2772 (3%)]	Loss: 5.953652
+Train Epoch: 10 [800/2772 (3%)]	Loss: 10.537666
+Train Epoch: 10 [900/2772 (3%)]	Loss: 4.505859
+Train Epoch: 10 [1000/2772 (4%)]	Loss: 6.587108
+Train Epoch: 10 [1100/2772 (4%)]	Loss: 11.309980
+Train Epoch: 10 [1200/2772 (4%)]	Loss: 10.827318
+Train Epoch: 10 [1300/2772 (5%)]	Loss: 10.089701
+Train Epoch: 10 [1400/2772 (5%)]	Loss: 6.590439
+Train Epoch: 10 [1500/2772 (5%)]	Loss: 19.450275
+Train Epoch: 10 [1600/2772 (6%)]	Loss: 11.926231
+Train Epoch: 10 [1700/2772 (6%)]	Loss: 7.857331
+Train Epoch: 10 [1800/2772 (6%)]	Loss: 7.838526
+Train Epoch: 10 [1900/2772 (7%)]	Loss: 16.004597
+Train Epoch: 10 [2000/2772 (7%)]	Loss: 7.412223
+Train Epoch: 10 [2100/2772 (8%)]	Loss: 10.279402
+Train Epoch: 10 [2200/2772 (8%)]	Loss: 8.360209
+Train Epoch: 10 [2300/2772 (8%)]	Loss: 18.822670
+Train Epoch: 10 [2400/2772 (9%)]	Loss: 6.091516
+Train Epoch: 10 [2500/2772 (9%)]	Loss: 10.046419
+Train Epoch: 10 [2600/2772 (9%)]	Loss: 14.379863
+Train Epoch: 10 [2700/2772 (10%)]	Loss: 11.431166
+
+Average Train Epoch Loss:  8.896377624220834
+Val Epoch: 10 [0/756 (0%)]	Average Loss So Far: 22.676172
+Val Epoch: 10 [100/756 (1%)]	Average Loss So Far: 19.128457
+Val Epoch: 10 [200/756 (1%)]	Average Loss So Far: 19.392242
+Val Epoch: 10 [300/756 (2%)]	Average Loss So Far: 19.444970
+Val Epoch: 10 [400/756 (3%)]	Average Loss So Far: 19.032835
+Val Epoch: 10 [500/756 (3%)]	Average Loss So Far: 18.989578
+Val Epoch: 10 [600/756 (4%)]	Average Loss So Far: 19.224238
+Val Epoch: 10 [700/756 (5%)]	Average Loss So Far: 19.253224
+Average Validation Epoch Loss:  19.159366292297523
+Average Threat Score: 0.001321557442049087 
+Train Epoch: 11 [0/2772 (0%)]	Loss: 12.646219
+Train Epoch: 11 [100/2772 (0%)]	Loss: 12.063669
+Train Epoch: 11 [200/2772 (1%)]	Loss: 6.383274
+Train Epoch: 11 [300/2772 (1%)]	Loss: 10.451906
+Train Epoch: 11 [400/2772 (1%)]	Loss: 9.981400
+Train Epoch: 11 [500/2772 (2%)]	Loss: 12.381760
+Train Epoch: 11 [600/2772 (2%)]	Loss: 11.898350
+Train Epoch: 11 [700/2772 (3%)]	Loss: 4.641090
+Train Epoch: 11 [800/2772 (3%)]	Loss: 6.664196
+Train Epoch: 11 [900/2772 (3%)]	Loss: 7.363308
+Train Epoch: 11 [1000/2772 (4%)]	Loss: 7.904568
+Train Epoch: 11 [1100/2772 (4%)]	Loss: 6.744664
+Train Epoch: 11 [1200/2772 (4%)]	Loss: 3.161931
+Train Epoch: 11 [1300/2772 (5%)]	Loss: 9.560869
+Train Epoch: 11 [1400/2772 (5%)]	Loss: 5.151326
+Train Epoch: 11 [1500/2772 (5%)]	Loss: 9.103498
+Train Epoch: 11 [1600/2772 (6%)]	Loss: 5.665520
+Train Epoch: 11 [1700/2772 (6%)]	Loss: 15.495520
+Train Epoch: 11 [1800/2772 (6%)]	Loss: 7.434206
+Train Epoch: 11 [1900/2772 (7%)]	Loss: 6.142326
+Train Epoch: 11 [2000/2772 (7%)]	Loss: 8.599578
+Train Epoch: 11 [2100/2772 (8%)]	Loss: 2.616158
+Train Epoch: 11 [2200/2772 (8%)]	Loss: 9.674717
+Train Epoch: 11 [2300/2772 (8%)]	Loss: 3.471866
+Train Epoch: 11 [2400/2772 (9%)]	Loss: 7.327838
+Train Epoch: 11 [2500/2772 (9%)]	Loss: 8.168566
+Train Epoch: 11 [2600/2772 (9%)]	Loss: 4.773442
+Train Epoch: 11 [2700/2772 (10%)]	Loss: 7.465528
+
+Average Train Epoch Loss:  8.308791914027491
+Val Epoch: 11 [0/756 (0%)]	Average Loss So Far: 12.400461
+Val Epoch: 11 [100/756 (1%)]	Average Loss So Far: 18.937211
+Val Epoch: 11 [200/756 (1%)]	Average Loss So Far: 19.244160
+Val Epoch: 11 [300/756 (2%)]	Average Loss So Far: 19.456056
+Val Epoch: 11 [400/756 (3%)]	Average Loss So Far: 19.870506
+Val Epoch: 11 [500/756 (3%)]	Average Loss So Far: 20.039125
+Val Epoch: 11 [600/756 (4%)]	Average Loss So Far: 19.806347
+Val Epoch: 11 [700/756 (5%)]	Average Loss So Far: 19.614773
+Average Validation Epoch Loss:  19.611542233083615
+Average Threat Score: 0.0019676436484722354 
+Train Epoch: 12 [0/2772 (0%)]	Loss: 5.234648
+Train Epoch: 12 [100/2772 (0%)]	Loss: 7.750645
+Train Epoch: 12 [200/2772 (1%)]	Loss: 9.304264
+Train Epoch: 12 [300/2772 (1%)]	Loss: 10.049804
+Train Epoch: 12 [400/2772 (1%)]	Loss: 11.014620
+Train Epoch: 12 [500/2772 (2%)]	Loss: 4.105180
+Train Epoch: 12 [600/2772 (2%)]	Loss: 11.514316
+Train Epoch: 12 [700/2772 (3%)]	Loss: 4.712379
+Train Epoch: 12 [800/2772 (3%)]	Loss: 1.428547
+Train Epoch: 12 [900/2772 (3%)]	Loss: 5.265291
+Train Epoch: 12 [1000/2772 (4%)]	Loss: 11.469221
+Train Epoch: 12 [1100/2772 (4%)]	Loss: 4.584345
+Train Epoch: 12 [1200/2772 (4%)]	Loss: 6.883031
+Train Epoch: 12 [1300/2772 (5%)]	Loss: 1.814417
+Train Epoch: 12 [1400/2772 (5%)]	Loss: 13.171274
+Train Epoch: 12 [1500/2772 (5%)]	Loss: 17.555370
+Train Epoch: 12 [1600/2772 (6%)]	Loss: 1.013079
+Train Epoch: 12 [1700/2772 (6%)]	Loss: 2.434281
+Train Epoch: 12 [1800/2772 (6%)]	Loss: 4.704003
+Train Epoch: 12 [1900/2772 (7%)]	Loss: 11.419329
+Train Epoch: 12 [2000/2772 (7%)]	Loss: 7.348152
+Train Epoch: 12 [2100/2772 (8%)]	Loss: 7.800903
+Train Epoch: 12 [2200/2772 (8%)]	Loss: 8.314098
+Train Epoch: 12 [2300/2772 (8%)]	Loss: 10.363951
+Train Epoch: 12 [2400/2772 (9%)]	Loss: 4.752777
+Train Epoch: 12 [2500/2772 (9%)]	Loss: 5.344239
+Train Epoch: 12 [2600/2772 (9%)]	Loss: 11.662750
+Train Epoch: 12 [2700/2772 (10%)]	Loss: 8.838692
+
+Average Train Epoch Loss:  7.711186060356716
+Val Epoch: 12 [0/756 (0%)]	Average Loss So Far: 10.461497
+Val Epoch: 12 [100/756 (1%)]	Average Loss So Far: 18.958171
+Val Epoch: 12 [200/756 (1%)]	Average Loss So Far: 18.743104
+Val Epoch: 12 [300/756 (2%)]	Average Loss So Far: 19.022541
+Val Epoch: 12 [400/756 (3%)]	Average Loss So Far: 19.110479
+Val Epoch: 12 [500/756 (3%)]	Average Loss So Far: 19.345647
+Val Epoch: 12 [600/756 (4%)]	Average Loss So Far: 19.257826
+Val Epoch: 12 [700/756 (5%)]	Average Loss So Far: 19.423769
+Average Validation Epoch Loss:  19.43331626735667
+Average Threat Score: 0.002032294569145297 
+Train Epoch: 13 [0/2772 (0%)]	Loss: 3.594176
+Train Epoch: 13 [100/2772 (0%)]	Loss: 9.032716
+Train Epoch: 13 [200/2772 (1%)]	Loss: 5.326345
+Train Epoch: 13 [300/2772 (1%)]	Loss: 2.857760
+Train Epoch: 13 [400/2772 (1%)]	Loss: 5.141787
+Train Epoch: 13 [500/2772 (2%)]	Loss: 9.962412
+Train Epoch: 13 [600/2772 (2%)]	Loss: 0.558719
+Train Epoch: 13 [700/2772 (3%)]	Loss: 8.525751
+Train Epoch: 13 [800/2772 (3%)]	Loss: 5.801084
+Train Epoch: 13 [900/2772 (3%)]	Loss: 4.579916
+Train Epoch: 13 [1000/2772 (4%)]	Loss: 10.739788
+Train Epoch: 13 [1100/2772 (4%)]	Loss: 3.550965
+Train Epoch: 13 [1200/2772 (4%)]	Loss: 7.948652
+Train Epoch: 13 [1300/2772 (5%)]	Loss: 3.172673
+Train Epoch: 13 [1400/2772 (5%)]	Loss: 1.948911
+Train Epoch: 13 [1500/2772 (5%)]	Loss: 11.851470
+Train Epoch: 13 [1600/2772 (6%)]	Loss: 14.897825
+Train Epoch: 13 [1700/2772 (6%)]	Loss: 13.565868
+Train Epoch: 13 [1800/2772 (6%)]	Loss: 9.544378
+Train Epoch: 13 [1900/2772 (7%)]	Loss: 13.118653
+Train Epoch: 13 [2000/2772 (7%)]	Loss: 6.363896
+Train Epoch: 13 [2100/2772 (8%)]	Loss: 16.724510
+Train Epoch: 13 [2200/2772 (8%)]	Loss: 5.796664
+Train Epoch: 13 [2300/2772 (8%)]	Loss: 9.929869
+Train Epoch: 13 [2400/2772 (9%)]	Loss: 6.865253
+Train Epoch: 13 [2500/2772 (9%)]	Loss: 6.210172
+Train Epoch: 13 [2600/2772 (9%)]	Loss: 8.018475
+Train Epoch: 13 [2700/2772 (10%)]	Loss: 10.555058
+
+Average Train Epoch Loss:  7.075266056913146
+Val Epoch: 13 [0/756 (0%)]	Average Loss So Far: 21.580437
+Val Epoch: 13 [100/756 (1%)]	Average Loss So Far: 20.100943
+Val Epoch: 13 [200/756 (1%)]	Average Loss So Far: 20.113420
+Val Epoch: 13 [300/756 (2%)]	Average Loss So Far: 20.074852
+Val Epoch: 13 [400/756 (3%)]	Average Loss So Far: 19.966701
+Val Epoch: 13 [500/756 (3%)]	Average Loss So Far: 20.122125
+Val Epoch: 13 [600/756 (4%)]	Average Loss So Far: 19.930712
+Val Epoch: 13 [700/756 (5%)]	Average Loss So Far: 19.855059
+Average Validation Epoch Loss:  19.81662347203209
+Average Threat Score: 0.0023687610793218174 
+Train Epoch: 14 [0/2772 (0%)]	Loss: 4.689052
+Train Epoch: 14 [100/2772 (0%)]	Loss: 0.900013
+Train Epoch: 14 [200/2772 (1%)]	Loss: 11.695938
+Train Epoch: 14 [300/2772 (1%)]	Loss: 4.601871
+Train Epoch: 14 [400/2772 (1%)]	Loss: 6.116020
+Train Epoch: 14 [500/2772 (2%)]	Loss: 7.823915
+Train Epoch: 14 [600/2772 (2%)]	Loss: 2.048524
+Train Epoch: 14 [700/2772 (3%)]	Loss: 7.294242
+Train Epoch: 14 [800/2772 (3%)]	Loss: 11.184715
+Train Epoch: 14 [900/2772 (3%)]	Loss: 8.951298
+Train Epoch: 14 [1000/2772 (4%)]	Loss: 13.161521
+Train Epoch: 14 [1100/2772 (4%)]	Loss: 10.054168
+Train Epoch: 14 [1200/2772 (4%)]	Loss: 4.387448
+Train Epoch: 14 [1300/2772 (5%)]	Loss: 7.047928
+Train Epoch: 14 [1400/2772 (5%)]	Loss: 6.827773
+Train Epoch: 14 [1500/2772 (5%)]	Loss: 12.512012
+Train Epoch: 14 [1600/2772 (6%)]	Loss: 7.607498
+Train Epoch: 14 [1700/2772 (6%)]	Loss: 1.436816
+Train Epoch: 14 [1800/2772 (6%)]	Loss: 12.033684
+Train Epoch: 14 [1900/2772 (7%)]	Loss: 3.202591
+Train Epoch: 14 [2000/2772 (7%)]	Loss: 2.962669
+Train Epoch: 14 [2100/2772 (8%)]	Loss: 6.252277
+Train Epoch: 14 [2200/2772 (8%)]	Loss: 5.071647
+Train Epoch: 14 [2300/2772 (8%)]	Loss: 6.296218
+Train Epoch: 14 [2400/2772 (9%)]	Loss: 4.839848
+Train Epoch: 14 [2500/2772 (9%)]	Loss: 1.471389
+Train Epoch: 14 [2600/2772 (9%)]	Loss: 4.268826
+Train Epoch: 14 [2700/2772 (10%)]	Loss: 3.752167
+
+Average Train Epoch Loss:  6.4725481998094745
+Val Epoch: 14 [0/756 (0%)]	Average Loss So Far: 19.408657
+Val Epoch: 14 [100/756 (1%)]	Average Loss So Far: 20.921936
+Val Epoch: 14 [200/756 (1%)]	Average Loss So Far: 19.975506
+Val Epoch: 14 [300/756 (2%)]	Average Loss So Far: 20.045901
+Val Epoch: 14 [400/756 (3%)]	Average Loss So Far: 20.153721
+Val Epoch: 14 [500/756 (3%)]	Average Loss So Far: 19.666070
+Val Epoch: 14 [600/756 (4%)]	Average Loss So Far: 19.729544
+Val Epoch: 14 [700/756 (5%)]	Average Loss So Far: 19.640161
+Average Validation Epoch Loss:  19.666685919282298
+Average Threat Score: 0.0013423393392398284 
+Train Epoch: 15 [0/2772 (0%)]	Loss: 6.976057
+Train Epoch: 15 [100/2772 (0%)]	Loss: 8.057107
+Train Epoch: 15 [200/2772 (1%)]	Loss: 7.147835
+Train Epoch: 15 [300/2772 (1%)]	Loss: 10.374575
+Train Epoch: 15 [400/2772 (1%)]	Loss: 9.272705
+Train Epoch: 15 [500/2772 (2%)]	Loss: 5.627067
+Train Epoch: 15 [600/2772 (2%)]	Loss: 1.457264
+Train Epoch: 15 [700/2772 (3%)]	Loss: 0.888411
+Train Epoch: 15 [800/2772 (3%)]	Loss: 5.985545
+Train Epoch: 15 [900/2772 (3%)]	Loss: 3.523323
+Train Epoch: 15 [1000/2772 (4%)]	Loss: 3.058460
+Train Epoch: 15 [1100/2772 (4%)]	Loss: 2.803021
+Train Epoch: 15 [1200/2772 (4%)]	Loss: 7.069193
+Train Epoch: 15 [1300/2772 (5%)]	Loss: 4.925872
+Train Epoch: 15 [1400/2772 (5%)]	Loss: 1.806951
+Train Epoch: 15 [1500/2772 (5%)]	Loss: 3.656561
+Train Epoch: 15 [1600/2772 (6%)]	Loss: 2.524126
+Train Epoch: 15 [1700/2772 (6%)]	Loss: 4.555954
+Train Epoch: 15 [1800/2772 (6%)]	Loss: 2.990505
+Train Epoch: 15 [1900/2772 (7%)]	Loss: 6.263081
+Train Epoch: 15 [2000/2772 (7%)]	Loss: 14.558821
+Train Epoch: 15 [2100/2772 (8%)]	Loss: 2.634695
+Train Epoch: 15 [2200/2772 (8%)]	Loss: 5.148785
+Train Epoch: 15 [2300/2772 (8%)]	Loss: 12.182322
+Train Epoch: 15 [2400/2772 (9%)]	Loss: 2.955156
+Train Epoch: 15 [2500/2772 (9%)]	Loss: 9.417312
+Train Epoch: 15 [2600/2772 (9%)]	Loss: 1.820521
+Train Epoch: 15 [2700/2772 (10%)]	Loss: 6.569893
+
+Average Train Epoch Loss:  5.927691092265805
+Val Epoch: 15 [0/756 (0%)]	Average Loss So Far: 21.614468
+Val Epoch: 15 [100/756 (1%)]	Average Loss So Far: 20.019966
+Val Epoch: 15 [200/756 (1%)]	Average Loss So Far: 19.388118
+Val Epoch: 15 [300/756 (2%)]	Average Loss So Far: 20.481163
+Val Epoch: 15 [400/756 (3%)]	Average Loss So Far: 20.407419
+Val Epoch: 15 [500/756 (3%)]	Average Loss So Far: 20.165595
+Val Epoch: 15 [600/756 (4%)]	Average Loss So Far: 20.495464
+Val Epoch: 15 [700/756 (5%)]	Average Loss So Far: 20.582684
+Average Validation Epoch Loss:  20.533211688516
+Average Threat Score: 0.0018179486068359838 
+Train Epoch: 16 [0/2772 (0%)]	Loss: 4.071865
+Train Epoch: 16 [100/2772 (0%)]	Loss: 4.637448
+Train Epoch: 16 [200/2772 (1%)]	Loss: 3.424774
+Train Epoch: 16 [300/2772 (1%)]	Loss: 2.826400
+Train Epoch: 16 [400/2772 (1%)]	Loss: 7.384487
+Train Epoch: 16 [500/2772 (2%)]	Loss: 7.113563
+Train Epoch: 16 [600/2772 (2%)]	Loss: 2.494819
+Train Epoch: 16 [700/2772 (3%)]	Loss: 6.853691
+Train Epoch: 16 [800/2772 (3%)]	Loss: 3.991122
+Train Epoch: 16 [900/2772 (3%)]	Loss: 5.504625
+Train Epoch: 16 [1000/2772 (4%)]	Loss: 4.910188
+Train Epoch: 16 [1100/2772 (4%)]	Loss: 2.750776
+Train Epoch: 16 [1200/2772 (4%)]	Loss: 1.680083
+Train Epoch: 16 [1300/2772 (5%)]	Loss: 11.107695
+Train Epoch: 16 [1400/2772 (5%)]	Loss: 3.810315
+Train Epoch: 16 [1500/2772 (5%)]	Loss: 2.725154
+Train Epoch: 16 [1600/2772 (6%)]	Loss: 4.057720
+Train Epoch: 16 [1700/2772 (6%)]	Loss: 2.374267
+Train Epoch: 16 [1800/2772 (6%)]	Loss: 7.276648
+Train Epoch: 16 [1900/2772 (7%)]	Loss: 1.120937
+Train Epoch: 16 [2000/2772 (7%)]	Loss: 0.923266
+Train Epoch: 16 [2100/2772 (8%)]	Loss: 7.378565
+Train Epoch: 16 [2200/2772 (8%)]	Loss: 8.801210
+Train Epoch: 16 [2300/2772 (8%)]	Loss: 6.333814
+Train Epoch: 16 [2400/2772 (9%)]	Loss: 9.793962
+Train Epoch: 16 [2500/2772 (9%)]	Loss: 7.751575
+Train Epoch: 16 [2600/2772 (9%)]	Loss: 4.921112
+Train Epoch: 16 [2700/2772 (10%)]	Loss: 1.404946
+
+Average Train Epoch Loss:  5.420694671087451
+Val Epoch: 16 [0/756 (0%)]	Average Loss So Far: 25.241632
+Val Epoch: 16 [100/756 (1%)]	Average Loss So Far: 19.513029
+Val Epoch: 16 [200/756 (1%)]	Average Loss So Far: 19.736607
+Val Epoch: 16 [300/756 (2%)]	Average Loss So Far: 19.726895
+Val Epoch: 16 [400/756 (3%)]	Average Loss So Far: 19.800560
+Val Epoch: 16 [500/756 (3%)]	Average Loss So Far: 20.037804
+Val Epoch: 16 [600/756 (4%)]	Average Loss So Far: 20.197277
+Val Epoch: 16 [700/756 (5%)]	Average Loss So Far: 20.149780
+Average Validation Epoch Loss:  20.132541893651247
+Average Threat Score: 0.0013757683657030894 
+Train Epoch: 17 [0/2772 (0%)]	Loss: 4.873720
+Train Epoch: 17 [100/2772 (0%)]	Loss: 2.367317
+Train Epoch: 17 [200/2772 (1%)]	Loss: 4.106724
+Train Epoch: 17 [300/2772 (1%)]	Loss: 3.180685
+Train Epoch: 17 [400/2772 (1%)]	Loss: 5.275228
+Train Epoch: 17 [500/2772 (2%)]	Loss: 7.214110
+Train Epoch: 17 [600/2772 (2%)]	Loss: 5.234966
+Train Epoch: 17 [700/2772 (3%)]	Loss: 8.426446
+Train Epoch: 17 [800/2772 (3%)]	Loss: 3.559206
+Train Epoch: 17 [900/2772 (3%)]	Loss: 2.517458
+Train Epoch: 17 [1000/2772 (4%)]	Loss: 5.695908
+Train Epoch: 17 [1100/2772 (4%)]	Loss: 3.562383
+Train Epoch: 17 [1200/2772 (4%)]	Loss: 2.840172
+Train Epoch: 17 [1300/2772 (5%)]	Loss: 6.085775
+Train Epoch: 17 [1400/2772 (5%)]	Loss: 3.816305
+Train Epoch: 17 [1500/2772 (5%)]	Loss: 5.137124
+Train Epoch: 17 [1600/2772 (6%)]	Loss: 5.026404
+Train Epoch: 17 [1700/2772 (6%)]	Loss: 5.104853
+Train Epoch: 17 [1800/2772 (6%)]	Loss: 1.487833
+Train Epoch: 17 [1900/2772 (7%)]	Loss: 7.814725
+Train Epoch: 17 [2000/2772 (7%)]	Loss: 3.011029
+Train Epoch: 17 [2100/2772 (8%)]	Loss: 5.683089
+Train Epoch: 17 [2200/2772 (8%)]	Loss: 5.401390
+Train Epoch: 17 [2300/2772 (8%)]	Loss: 6.388660
+Train Epoch: 17 [2400/2772 (9%)]	Loss: 1.141506
+Train Epoch: 17 [2500/2772 (9%)]	Loss: 3.306778
+Train Epoch: 17 [2600/2772 (9%)]	Loss: 3.444687
+Train Epoch: 17 [2700/2772 (10%)]	Loss: 10.327915
+
+Average Train Epoch Loss:  4.966126237596784
+Val Epoch: 17 [0/756 (0%)]	Average Loss So Far: 19.720774
+Val Epoch: 17 [100/756 (1%)]	Average Loss So Far: 21.674463
+Val Epoch: 17 [200/756 (1%)]	Average Loss So Far: 20.538912
+Val Epoch: 17 [300/756 (2%)]	Average Loss So Far: 20.257349
+Val Epoch: 17 [400/756 (3%)]	Average Loss So Far: 20.243750
+Val Epoch: 17 [500/756 (3%)]	Average Loss So Far: 20.115708
+Val Epoch: 17 [600/756 (4%)]	Average Loss So Far: 20.119318
+Val Epoch: 17 [700/756 (5%)]	Average Loss So Far: 20.227850
+Average Validation Epoch Loss:  20.09998790927665
+Average Threat Score: 0.0014799874600530578 
+Train Epoch: 18 [0/2772 (0%)]	Loss: 1.443803
+Train Epoch: 18 [100/2772 (0%)]	Loss: 3.849857
+Train Epoch: 18 [200/2772 (1%)]	Loss: 4.182331
+Train Epoch: 18 [300/2772 (1%)]	Loss: 2.483700
+Train Epoch: 18 [400/2772 (1%)]	Loss: 5.321694
+Train Epoch: 18 [500/2772 (2%)]	Loss: 5.399713
+Train Epoch: 18 [600/2772 (2%)]	Loss: 7.685690
+Train Epoch: 18 [700/2772 (3%)]	Loss: 2.379155
+Train Epoch: 18 [800/2772 (3%)]	Loss: 4.740050
+Train Epoch: 18 [900/2772 (3%)]	Loss: 4.102394
+Train Epoch: 18 [1000/2772 (4%)]	Loss: 2.045097
+Train Epoch: 18 [1100/2772 (4%)]	Loss: 6.547109
+Train Epoch: 18 [1200/2772 (4%)]	Loss: 3.867489
+Train Epoch: 18 [1300/2772 (5%)]	Loss: 6.788807
+Train Epoch: 18 [1400/2772 (5%)]	Loss: 1.758610
+Train Epoch: 18 [1500/2772 (5%)]	Loss: 4.604423
+Train Epoch: 18 [1600/2772 (6%)]	Loss: 4.177792
+Train Epoch: 18 [1700/2772 (6%)]	Loss: 4.343991
+Train Epoch: 18 [1800/2772 (6%)]	Loss: 0.716325
+Train Epoch: 18 [1900/2772 (7%)]	Loss: 7.343626
+Train Epoch: 18 [2000/2772 (7%)]	Loss: 8.660408
+Train Epoch: 18 [2100/2772 (8%)]	Loss: 6.933444
+Train Epoch: 18 [2200/2772 (8%)]	Loss: 2.493299
+Train Epoch: 18 [2300/2772 (8%)]	Loss: 2.598314
+Train Epoch: 18 [2400/2772 (9%)]	Loss: 1.142318
+Train Epoch: 18 [2500/2772 (9%)]	Loss: 4.057621
+Train Epoch: 18 [2600/2772 (9%)]	Loss: 6.543197
+Train Epoch: 18 [2700/2772 (10%)]	Loss: 1.691692
+
+Average Train Epoch Loss:  4.5781436409226055
+Val Epoch: 18 [0/756 (0%)]	Average Loss So Far: 21.343124
+Val Epoch: 18 [100/756 (1%)]	Average Loss So Far: 19.566141
+Val Epoch: 18 [200/756 (1%)]	Average Loss So Far: 20.362247
+Val Epoch: 18 [300/756 (2%)]	Average Loss So Far: 20.401263
+Val Epoch: 18 [400/756 (3%)]	Average Loss So Far: 20.566703
+Val Epoch: 18 [500/756 (3%)]	Average Loss So Far: 20.348162
+Val Epoch: 18 [600/756 (4%)]	Average Loss So Far: 20.452134
+Val Epoch: 18 [700/756 (5%)]	Average Loss So Far: 20.476151
+Average Validation Epoch Loss:  20.53779858319217
+Average Threat Score: 0.002492142633027422 
+Train Epoch: 19 [0/2772 (0%)]	Loss: 4.444085
+Train Epoch: 19 [100/2772 (0%)]	Loss: 2.810541
+Train Epoch: 19 [200/2772 (1%)]	Loss: 0.793008
+Train Epoch: 19 [300/2772 (1%)]	Loss: 3.106985
+Train Epoch: 19 [400/2772 (1%)]	Loss: 3.319996
+Train Epoch: 19 [500/2772 (2%)]	Loss: 2.813194
+Train Epoch: 19 [600/2772 (2%)]	Loss: 3.626133
+Train Epoch: 19 [700/2772 (3%)]	Loss: 7.582535
+Train Epoch: 19 [800/2772 (3%)]	Loss: 7.163524
+Train Epoch: 19 [900/2772 (3%)]	Loss: 7.993217
+Train Epoch: 19 [1000/2772 (4%)]	Loss: 3.844023
+Train Epoch: 19 [1100/2772 (4%)]	Loss: 4.136486
+Train Epoch: 19 [1200/2772 (4%)]	Loss: 4.825354
+Train Epoch: 19 [1300/2772 (5%)]	Loss: 4.949581
+Train Epoch: 19 [1400/2772 (5%)]	Loss: 1.450764
+Train Epoch: 19 [1500/2772 (5%)]	Loss: 3.363034
+Train Epoch: 19 [1600/2772 (6%)]	Loss: 6.385548
+Train Epoch: 19 [1700/2772 (6%)]	Loss: 7.872401
+Train Epoch: 19 [1800/2772 (6%)]	Loss: 4.313794
+Train Epoch: 19 [1900/2772 (7%)]	Loss: 1.677598
+Train Epoch: 19 [2000/2772 (7%)]	Loss: 2.167332
+Train Epoch: 19 [2100/2772 (8%)]	Loss: 2.074643
+Train Epoch: 19 [2200/2772 (8%)]	Loss: 4.143392
+Train Epoch: 19 [2300/2772 (8%)]	Loss: 6.120294
+Train Epoch: 19 [2400/2772 (9%)]	Loss: 2.752551
+Train Epoch: 19 [2500/2772 (9%)]	Loss: 4.491245
+Train Epoch: 19 [2600/2772 (9%)]	Loss: 6.276065
+Train Epoch: 19 [2700/2772 (10%)]	Loss: 5.884297
+
+Average Train Epoch Loss:  4.263968250860728
+Val Epoch: 19 [0/756 (0%)]	Average Loss So Far: 33.329224
+Val Epoch: 19 [100/756 (1%)]	Average Loss So Far: 21.769083
+Val Epoch: 19 [200/756 (1%)]	Average Loss So Far: 21.960736
+Val Epoch: 19 [300/756 (2%)]	Average Loss So Far: 21.490077
+Val Epoch: 19 [400/756 (3%)]	Average Loss So Far: 21.116848
+Val Epoch: 19 [500/756 (3%)]	Average Loss So Far: 21.009981
+Val Epoch: 19 [600/756 (4%)]	Average Loss So Far: 20.950681
+Val Epoch: 19 [700/756 (5%)]	Average Loss So Far: 20.660838
+Average Validation Epoch Loss:  20.55139283023814
+Average Threat Score: 0.002031616045829776 
+Train Epoch: 20 [0/2772 (0%)]	Loss: 2.233480
+Train Epoch: 20 [100/2772 (0%)]	Loss: 3.565520
+Train Epoch: 20 [200/2772 (1%)]	Loss: 1.067333
+Train Epoch: 20 [300/2772 (1%)]	Loss: 4.705071
+Train Epoch: 20 [400/2772 (1%)]	Loss: 3.871888
+Train Epoch: 20 [500/2772 (2%)]	Loss: 2.422502
+Train Epoch: 20 [600/2772 (2%)]	Loss: 5.650074
+Train Epoch: 20 [700/2772 (3%)]	Loss: 3.108617
+Train Epoch: 20 [800/2772 (3%)]	Loss: 5.329028
+Train Epoch: 20 [900/2772 (3%)]	Loss: 1.737165
+Train Epoch: 20 [1000/2772 (4%)]	Loss: 3.706947
+Train Epoch: 20 [1100/2772 (4%)]	Loss: 7.219111
+Train Epoch: 20 [1200/2772 (4%)]	Loss: 4.848338
+Train Epoch: 20 [1300/2772 (5%)]	Loss: 1.564567
+Train Epoch: 20 [1400/2772 (5%)]	Loss: 5.152260
+Train Epoch: 20 [1500/2772 (5%)]	Loss: 6.838255
+Train Epoch: 20 [1600/2772 (6%)]	Loss: 4.219434
+Train Epoch: 20 [1700/2772 (6%)]	Loss: 2.016314
+Train Epoch: 20 [1800/2772 (6%)]	Loss: 2.449550
+Train Epoch: 20 [1900/2772 (7%)]	Loss: 1.060191
+Train Epoch: 20 [2000/2772 (7%)]	Loss: 3.909511
+Train Epoch: 20 [2100/2772 (8%)]	Loss: 8.833387
+Train Epoch: 20 [2200/2772 (8%)]	Loss: 4.115283
+Train Epoch: 20 [2300/2772 (8%)]	Loss: 4.021541
+Train Epoch: 20 [2400/2772 (9%)]	Loss: 4.910360
+Train Epoch: 20 [2500/2772 (9%)]	Loss: 6.665696
+Train Epoch: 20 [2600/2772 (9%)]	Loss: 6.228134
+Train Epoch: 20 [2700/2772 (10%)]	Loss: 3.917615
+
+Average Train Epoch Loss:  3.977105065191119
+Val Epoch: 20 [0/756 (0%)]	Average Loss So Far: 29.135386
+Val Epoch: 20 [100/756 (1%)]	Average Loss So Far: 22.456746
+Val Epoch: 20 [200/756 (1%)]	Average Loss So Far: 21.431823
+Val Epoch: 20 [300/756 (2%)]	Average Loss So Far: 21.138388
+Val Epoch: 20 [400/756 (3%)]	Average Loss So Far: 20.559401
+Val Epoch: 20 [500/756 (3%)]	Average Loss So Far: 20.478601
+Val Epoch: 20 [600/756 (4%)]	Average Loss So Far: 20.562360
+Val Epoch: 20 [700/756 (5%)]	Average Loss So Far: 20.605221
+Average Validation Epoch Loss:  20.659651247912613
+Average Threat Score: 0.00180462916799274 
+Train Epoch: 21 [0/2772 (0%)]	Loss: 3.131433
+Train Epoch: 21 [100/2772 (0%)]	Loss: 3.738221
+Train Epoch: 21 [200/2772 (1%)]	Loss: 6.048639
+Train Epoch: 21 [300/2772 (1%)]	Loss: 2.153029
+Train Epoch: 21 [400/2772 (1%)]	Loss: 3.337688
+Train Epoch: 21 [500/2772 (2%)]	Loss: 4.842633
+Train Epoch: 21 [600/2772 (2%)]	Loss: 3.956335
+Train Epoch: 21 [700/2772 (3%)]	Loss: 8.512018
+Train Epoch: 21 [800/2772 (3%)]	Loss: 3.735870
+Train Epoch: 21 [900/2772 (3%)]	Loss: 1.744961
+Train Epoch: 21 [1000/2772 (4%)]	Loss: 4.258170
+Train Epoch: 21 [1100/2772 (4%)]	Loss: 1.392895
+Train Epoch: 21 [1200/2772 (4%)]	Loss: 2.514501
+Train Epoch: 21 [1300/2772 (5%)]	Loss: 7.256005
+Train Epoch: 21 [1400/2772 (5%)]	Loss: 3.364228
+Train Epoch: 21 [1500/2772 (5%)]	Loss: 0.855789
+Train Epoch: 21 [1600/2772 (6%)]	Loss: 2.833647
+Train Epoch: 21 [1700/2772 (6%)]	Loss: 3.877763
+Train Epoch: 21 [1800/2772 (6%)]	Loss: 2.716255
+Train Epoch: 21 [1900/2772 (7%)]	Loss: 2.299622
+Train Epoch: 21 [2000/2772 (7%)]	Loss: 2.184297
+Train Epoch: 21 [2100/2772 (8%)]	Loss: 4.703590
+Train Epoch: 21 [2200/2772 (8%)]	Loss: 6.640699
+Train Epoch: 21 [2300/2772 (8%)]	Loss: 3.579966
+Train Epoch: 21 [2400/2772 (9%)]	Loss: 9.718901
+Train Epoch: 21 [2500/2772 (9%)]	Loss: 5.020819
+Train Epoch: 21 [2600/2772 (9%)]	Loss: 2.932870
+Train Epoch: 21 [2700/2772 (10%)]	Loss: 5.300413
+
+Average Train Epoch Loss:  3.705718409017395
+Val Epoch: 21 [0/756 (0%)]	Average Loss So Far: 25.518864
+Val Epoch: 21 [100/756 (1%)]	Average Loss So Far: 21.644925
+Val Epoch: 21 [200/756 (1%)]	Average Loss So Far: 21.574353
+Val Epoch: 21 [300/756 (2%)]	Average Loss So Far: 21.890880
+Val Epoch: 21 [400/756 (3%)]	Average Loss So Far: 21.565298
+Val Epoch: 21 [500/756 (3%)]	Average Loss So Far: 21.181172
+Val Epoch: 21 [600/756 (4%)]	Average Loss So Far: 21.022819
+Val Epoch: 21 [700/756 (5%)]	Average Loss So Far: 21.052954
+Average Validation Epoch Loss:  21.20999529752782
+Average Threat Score: 0.0017586083354048983 
+Train Epoch: 22 [0/2772 (0%)]	Loss: 3.432856
+Train Epoch: 22 [100/2772 (0%)]	Loss: 2.388994
+Train Epoch: 22 [200/2772 (1%)]	Loss: 2.349582
+Train Epoch: 22 [300/2772 (1%)]	Loss: 4.596507
+Train Epoch: 22 [400/2772 (1%)]	Loss: 5.698072
+Train Epoch: 22 [500/2772 (2%)]	Loss: 0.512522
+Train Epoch: 22 [600/2772 (2%)]	Loss: 4.433189
+Train Epoch: 22 [700/2772 (3%)]	Loss: 5.634696
+Train Epoch: 22 [800/2772 (3%)]	Loss: 0.612385
+Train Epoch: 22 [900/2772 (3%)]	Loss: 3.905279
+Train Epoch: 22 [1000/2772 (4%)]	Loss: 8.239904
+Train Epoch: 22 [1100/2772 (4%)]	Loss: 6.490935
+Train Epoch: 22 [1200/2772 (4%)]	Loss: 2.980021
+Train Epoch: 22 [1300/2772 (5%)]	Loss: 2.787266
+Train Epoch: 22 [1400/2772 (5%)]	Loss: 3.664516
+Train Epoch: 22 [1500/2772 (5%)]	Loss: 2.270560
+Train Epoch: 22 [1600/2772 (6%)]	Loss: 4.187776
+Train Epoch: 22 [1700/2772 (6%)]	Loss: 5.835060
+Train Epoch: 22 [1800/2772 (6%)]	Loss: 3.028908
+Train Epoch: 22 [1900/2772 (7%)]	Loss: 1.769048
+Train Epoch: 22 [2000/2772 (7%)]	Loss: 2.892283
+Train Epoch: 22 [2100/2772 (8%)]	Loss: 4.753683
+Train Epoch: 22 [2200/2772 (8%)]	Loss: 2.757325
+Train Epoch: 22 [2300/2772 (8%)]	Loss: 6.828896
+Train Epoch: 22 [2400/2772 (9%)]	Loss: 0.790868
+Train Epoch: 22 [2500/2772 (9%)]	Loss: 2.033972
+Train Epoch: 22 [2600/2772 (9%)]	Loss: 5.900730
+Train Epoch: 22 [2700/2772 (10%)]	Loss: 2.856550
+
+Average Train Epoch Loss:  3.511630445880033
+Val Epoch: 22 [0/756 (0%)]	Average Loss So Far: 17.256605
+Val Epoch: 22 [100/756 (1%)]	Average Loss So Far: 20.444859
+Val Epoch: 22 [200/756 (1%)]	Average Loss So Far: 20.475535
+Val Epoch: 22 [300/756 (2%)]	Average Loss So Far: 20.084614
+Val Epoch: 22 [400/756 (3%)]	Average Loss So Far: 20.424867
+Val Epoch: 22 [500/756 (3%)]	Average Loss So Far: 20.727756
+Val Epoch: 22 [600/756 (4%)]	Average Loss So Far: 20.888241
+Val Epoch: 22 [700/756 (5%)]	Average Loss So Far: 20.764769
+Average Validation Epoch Loss:  20.710464454832533
+Average Threat Score: 0.0016742151134484817 
+Train Epoch: 23 [0/2772 (0%)]	Loss: 5.177364
+Train Epoch: 23 [100/2772 (0%)]	Loss: 4.929775
+Train Epoch: 23 [200/2772 (1%)]	Loss: 6.229037
+Train Epoch: 23 [300/2772 (1%)]	Loss: 3.444255
+Train Epoch: 23 [400/2772 (1%)]	Loss: 4.852970
+Train Epoch: 23 [500/2772 (2%)]	Loss: 1.626058
+Train Epoch: 23 [600/2772 (2%)]	Loss: 5.095342
+Train Epoch: 23 [700/2772 (3%)]	Loss: 5.202476
+Train Epoch: 23 [800/2772 (3%)]	Loss: 1.637699
+Train Epoch: 23 [900/2772 (3%)]	Loss: 1.822123
+Train Epoch: 23 [1000/2772 (4%)]	Loss: 1.027814
+Train Epoch: 23 [1100/2772 (4%)]	Loss: 1.811229
+Train Epoch: 23 [1200/2772 (4%)]	Loss: 0.817468
+Train Epoch: 23 [1300/2772 (5%)]	Loss: 4.583127
+Train Epoch: 23 [1400/2772 (5%)]	Loss: 4.822680
+Train Epoch: 23 [1500/2772 (5%)]	Loss: 3.151952
+Train Epoch: 23 [1600/2772 (6%)]	Loss: 1.790152
+Train Epoch: 23 [1700/2772 (6%)]	Loss: 1.803852
+Train Epoch: 23 [1800/2772 (6%)]	Loss: 1.188177
+Train Epoch: 23 [1900/2772 (7%)]	Loss: 5.504691
+Train Epoch: 23 [2000/2772 (7%)]	Loss: 4.837657
+Train Epoch: 23 [2100/2772 (8%)]	Loss: 3.717962
+Train Epoch: 23 [2200/2772 (8%)]	Loss: 3.645325
+Train Epoch: 23 [2300/2772 (8%)]	Loss: 3.655544
+Train Epoch: 23 [2400/2772 (9%)]	Loss: 3.065897
+Train Epoch: 23 [2500/2772 (9%)]	Loss: 4.765671
+Train Epoch: 23 [2600/2772 (9%)]	Loss: 3.361542
+Train Epoch: 23 [2700/2772 (10%)]	Loss: 4.047182
+
+Average Train Epoch Loss:  3.33025056729026
+Val Epoch: 23 [0/756 (0%)]	Average Loss So Far: 17.421650
+Val Epoch: 23 [100/756 (1%)]	Average Loss So Far: 21.191431
+Val Epoch: 23 [200/756 (1%)]	Average Loss So Far: 20.643413
+Val Epoch: 23 [300/756 (2%)]	Average Loss So Far: 20.330693
+Val Epoch: 23 [400/756 (3%)]	Average Loss So Far: 20.185695
+Val Epoch: 23 [500/756 (3%)]	Average Loss So Far: 20.133751
+Val Epoch: 23 [600/756 (4%)]	Average Loss So Far: 20.183952
+Val Epoch: 23 [700/756 (5%)]	Average Loss So Far: 20.493636
+Average Validation Epoch Loss:  20.54555785340607
+Average Threat Score: 0.001319260830453858 
+Train Epoch: 24 [0/2772 (0%)]	Loss: 2.559342
+Train Epoch: 24 [100/2772 (0%)]	Loss: 0.959700
+Train Epoch: 24 [200/2772 (1%)]	Loss: 4.858824
+Train Epoch: 24 [300/2772 (1%)]	Loss: 1.034203
+Train Epoch: 24 [400/2772 (1%)]	Loss: 2.745162
+Train Epoch: 24 [500/2772 (2%)]	Loss: 4.705741
+Train Epoch: 24 [600/2772 (2%)]	Loss: 0.433012
+Train Epoch: 24 [700/2772 (3%)]	Loss: 3.551678
+Train Epoch: 24 [800/2772 (3%)]	Loss: 1.445932
+Train Epoch: 24 [900/2772 (3%)]	Loss: 6.995534
+Train Epoch: 24 [1000/2772 (4%)]	Loss: 2.656631
+Train Epoch: 24 [1100/2772 (4%)]	Loss: 2.484577
+Train Epoch: 24 [1200/2772 (4%)]	Loss: 2.001607
+Train Epoch: 24 [1300/2772 (5%)]	Loss: 3.553444
+Train Epoch: 24 [1400/2772 (5%)]	Loss: 4.059052
+Train Epoch: 24 [1500/2772 (5%)]	Loss: 2.346786
+Train Epoch: 24 [1600/2772 (6%)]	Loss: 6.592628
+Train Epoch: 24 [1700/2772 (6%)]	Loss: 1.941665
+Train Epoch: 24 [1800/2772 (6%)]	Loss: 4.216194
+Train Epoch: 24 [1900/2772 (7%)]	Loss: 0.921962
+Train Epoch: 24 [2000/2772 (7%)]	Loss: 0.536437
+Train Epoch: 24 [2100/2772 (8%)]	Loss: 2.028872
+Train Epoch: 24 [2200/2772 (8%)]	Loss: 4.190351
+Train Epoch: 24 [2300/2772 (8%)]	Loss: 3.264700
+Train Epoch: 24 [2400/2772 (9%)]	Loss: 3.401362
+Train Epoch: 24 [2500/2772 (9%)]	Loss: 1.856530
+Train Epoch: 24 [2600/2772 (9%)]	Loss: 4.756142
+Train Epoch: 24 [2700/2772 (10%)]	Loss: 1.765857
+
+Average Train Epoch Loss:  3.1363772021614627
+Val Epoch: 24 [0/756 (0%)]	Average Loss So Far: 28.668625
+Val Epoch: 24 [100/756 (1%)]	Average Loss So Far: 20.526073
+Val Epoch: 24 [200/756 (1%)]	Average Loss So Far: 20.573393
+Val Epoch: 24 [300/756 (2%)]	Average Loss So Far: 20.231480
+Val Epoch: 24 [400/756 (3%)]	Average Loss So Far: 20.692427
+Val Epoch: 24 [500/756 (3%)]	Average Loss So Far: 20.767584
+Val Epoch: 24 [600/756 (4%)]	Average Loss So Far: 20.427973
+Val Epoch: 24 [700/756 (5%)]	Average Loss So Far: 20.532188
+Average Validation Epoch Loss:  20.713446448088952
+Average Threat Score: 0.0015343791674625464 
+Train Epoch: 25 [0/2772 (0%)]	Loss: 1.256350
+Train Epoch: 25 [100/2772 (0%)]	Loss: 2.198901
+Train Epoch: 25 [200/2772 (1%)]	Loss: 2.530368
+Train Epoch: 25 [300/2772 (1%)]	Loss: 0.903532
+Train Epoch: 25 [400/2772 (1%)]	Loss: 1.935550
+Train Epoch: 25 [500/2772 (2%)]	Loss: 2.789960
+Train Epoch: 25 [600/2772 (2%)]	Loss: 1.069669
+Train Epoch: 25 [700/2772 (3%)]	Loss: 3.806706
+Train Epoch: 25 [800/2772 (3%)]	Loss: 2.299041
+Train Epoch: 25 [900/2772 (3%)]	Loss: 2.200464
+Train Epoch: 25 [1000/2772 (4%)]	Loss: 2.367286
+Train Epoch: 25 [1100/2772 (4%)]	Loss: 5.887223
+Train Epoch: 25 [1200/2772 (4%)]	Loss: 1.910096
+Train Epoch: 25 [1300/2772 (5%)]	Loss: 1.090593
+Train Epoch: 25 [1400/2772 (5%)]	Loss: 0.428080
+Train Epoch: 25 [1500/2772 (5%)]	Loss: 4.450508
+Train Epoch: 25 [1600/2772 (6%)]	Loss: 2.992691
+Train Epoch: 25 [1700/2772 (6%)]	Loss: 1.288779
+Train Epoch: 25 [1800/2772 (6%)]	Loss: 1.709631
+Train Epoch: 25 [1900/2772 (7%)]	Loss: 0.682665
+Train Epoch: 25 [2000/2772 (7%)]	Loss: 1.901052
+Train Epoch: 25 [2100/2772 (8%)]	Loss: 2.849230
+Train Epoch: 25 [2200/2772 (8%)]	Loss: 0.413624
+Train Epoch: 25 [2300/2772 (8%)]	Loss: 3.243020
+Train Epoch: 25 [2400/2772 (9%)]	Loss: 3.503392
+Train Epoch: 25 [2500/2772 (9%)]	Loss: 1.699971
+Train Epoch: 25 [2600/2772 (9%)]	Loss: 0.786248
+Train Epoch: 25 [2700/2772 (10%)]	Loss: 4.252124
+
+Average Train Epoch Loss:  2.9858925609619584
+Val Epoch: 25 [0/756 (0%)]	Average Loss So Far: 26.743420
+Val Epoch: 25 [100/756 (1%)]	Average Loss So Far: 22.143108
+Val Epoch: 25 [200/756 (1%)]	Average Loss So Far: 21.323534
+Val Epoch: 25 [300/756 (2%)]	Average Loss So Far: 20.989058
+Val Epoch: 25 [400/756 (3%)]	Average Loss So Far: 20.787274
+Val Epoch: 25 [500/756 (3%)]	Average Loss So Far: 21.003848
+Val Epoch: 25 [600/756 (4%)]	Average Loss So Far: 20.740490
+Val Epoch: 25 [700/756 (5%)]	Average Loss So Far: 20.806402
+Average Validation Epoch Loss:  20.70273485070183
+Average Threat Score: 0.0012816898878934798 
+Train Epoch: 26 [0/2772 (0%)]	Loss: 4.314232
+Train Epoch: 26 [100/2772 (0%)]	Loss: 1.974367
+Train Epoch: 26 [200/2772 (1%)]	Loss: 4.329903
+Train Epoch: 26 [300/2772 (1%)]	Loss: 3.680936
+Train Epoch: 26 [400/2772 (1%)]	Loss: 2.942863
+Train Epoch: 26 [500/2772 (2%)]	Loss: 1.320118
+Train Epoch: 26 [600/2772 (2%)]	Loss: 3.554384
+Train Epoch: 26 [700/2772 (3%)]	Loss: 2.529409
+Train Epoch: 26 [800/2772 (3%)]	Loss: 2.697535
+Train Epoch: 26 [900/2772 (3%)]	Loss: 1.171330
+Train Epoch: 26 [1000/2772 (4%)]	Loss: 1.038884
+Train Epoch: 26 [1100/2772 (4%)]	Loss: 5.070721
+Train Epoch: 26 [1200/2772 (4%)]	Loss: 1.940355
+Train Epoch: 26 [1300/2772 (5%)]	Loss: 3.499487
+Train Epoch: 26 [1400/2772 (5%)]	Loss: 2.449856
+Train Epoch: 26 [1500/2772 (5%)]	Loss: 5.352702
+Train Epoch: 26 [1600/2772 (6%)]	Loss: 3.981264
+Train Epoch: 26 [1700/2772 (6%)]	Loss: 3.575912
+Train Epoch: 26 [1800/2772 (6%)]	Loss: 3.367344
+Train Epoch: 26 [1900/2772 (7%)]	Loss: 2.340571
+Train Epoch: 26 [2000/2772 (7%)]	Loss: 2.304996
+Train Epoch: 26 [2100/2772 (8%)]	Loss: 3.876628
+Train Epoch: 26 [2200/2772 (8%)]	Loss: 2.901408
+Train Epoch: 26 [2300/2772 (8%)]	Loss: 1.994253
+Train Epoch: 26 [2400/2772 (9%)]	Loss: 4.014683
+Train Epoch: 26 [2500/2772 (9%)]	Loss: 7.207438
+Train Epoch: 26 [2600/2772 (9%)]	Loss: 0.624121
+Train Epoch: 26 [2700/2772 (10%)]	Loss: 2.400118
+
+Average Train Epoch Loss:  2.8485767814031067
+Val Epoch: 26 [0/756 (0%)]	Average Loss So Far: 30.629002
+Val Epoch: 26 [100/756 (1%)]	Average Loss So Far: 20.187906
+Val Epoch: 26 [200/756 (1%)]	Average Loss So Far: 19.959499
+Val Epoch: 26 [300/756 (2%)]	Average Loss So Far: 20.023188
+Val Epoch: 26 [400/756 (3%)]	Average Loss So Far: 20.513204
+Val Epoch: 26 [500/756 (3%)]	Average Loss So Far: 20.502282
+Val Epoch: 26 [600/756 (4%)]	Average Loss So Far: 20.675674
+Val Epoch: 26 [700/756 (5%)]	Average Loss So Far: 20.848952
+Average Validation Epoch Loss:  20.978728766163822
+Average Threat Score: 0.0011524563530834501 
+Train Epoch: 27 [0/2772 (0%)]	Loss: 5.420271
+Train Epoch: 27 [100/2772 (0%)]	Loss: 1.694054
+Train Epoch: 27 [200/2772 (1%)]	Loss: 3.160065
+Train Epoch: 27 [300/2772 (1%)]	Loss: 1.375456
+Train Epoch: 27 [400/2772 (1%)]	Loss: 0.812072
+Train Epoch: 27 [500/2772 (2%)]	Loss: 3.026285
+Train Epoch: 27 [600/2772 (2%)]	Loss: 2.940018
+Train Epoch: 27 [700/2772 (3%)]	Loss: 3.751577
+Train Epoch: 27 [800/2772 (3%)]	Loss: 2.660433
+Train Epoch: 27 [900/2772 (3%)]	Loss: 3.188913
+Train Epoch: 27 [1000/2772 (4%)]	Loss: 3.393568
+Train Epoch: 27 [1100/2772 (4%)]	Loss: 0.574002
+Train Epoch: 27 [1200/2772 (4%)]	Loss: 1.631353
+Train Epoch: 27 [1300/2772 (5%)]	Loss: 2.211926
+Train Epoch: 27 [1400/2772 (5%)]	Loss: 2.346743
+Train Epoch: 27 [1500/2772 (5%)]	Loss: 3.950086
+Train Epoch: 27 [1600/2772 (6%)]	Loss: 0.779006
+Train Epoch: 27 [1700/2772 (6%)]	Loss: 3.262552
+Train Epoch: 27 [1800/2772 (6%)]	Loss: 3.152661
+Train Epoch: 27 [1900/2772 (7%)]	Loss: 3.721097
+Train Epoch: 27 [2000/2772 (7%)]	Loss: 1.276386
+Train Epoch: 27 [2100/2772 (8%)]	Loss: 2.821880
+Train Epoch: 27 [2200/2772 (8%)]	Loss: 2.659642
+Train Epoch: 27 [2300/2772 (8%)]	Loss: 2.534825
+Train Epoch: 27 [2400/2772 (9%)]	Loss: 0.620161
+Train Epoch: 27 [2500/2772 (9%)]	Loss: 2.707005
+Train Epoch: 27 [2600/2772 (9%)]	Loss: 1.849720
+Train Epoch: 27 [2700/2772 (10%)]	Loss: 4.433886
+
+Average Train Epoch Loss:  2.7410975843883008
+Val Epoch: 27 [0/756 (0%)]	Average Loss So Far: 25.019104
+Val Epoch: 27 [100/756 (1%)]	Average Loss So Far: 20.914797
+Val Epoch: 27 [200/756 (1%)]	Average Loss So Far: 20.851409
+Val Epoch: 27 [300/756 (2%)]	Average Loss So Far: 21.275369
+Val Epoch: 27 [400/756 (3%)]	Average Loss So Far: 21.042774
+Val Epoch: 27 [500/756 (3%)]	Average Loss So Far: 21.061694
+Val Epoch: 27 [600/756 (4%)]	Average Loss So Far: 21.069476
+Val Epoch: 27 [700/756 (5%)]	Average Loss So Far: 21.039267
+Average Validation Epoch Loss:  21.049881171927883
+Average Threat Score: 0.001620910258251661 
+Train Epoch: 28 [0/2772 (0%)]	Loss: 1.999680
+Train Epoch: 28 [100/2772 (0%)]	Loss: 3.111165
+Train Epoch: 28 [200/2772 (1%)]	Loss: 2.887136
+Train Epoch: 28 [300/2772 (1%)]	Loss: 2.784261
+Train Epoch: 28 [400/2772 (1%)]	Loss: 3.324486
+Train Epoch: 28 [500/2772 (2%)]	Loss: 3.469885
+Train Epoch: 28 [600/2772 (2%)]	Loss: 2.189867
+Train Epoch: 28 [700/2772 (3%)]	Loss: 2.414594
+Train Epoch: 28 [800/2772 (3%)]	Loss: 1.894243
+Train Epoch: 28 [900/2772 (3%)]	Loss: 3.502920
+Train Epoch: 28 [1000/2772 (4%)]	Loss: 3.211296
+Train Epoch: 28 [1100/2772 (4%)]	Loss: 0.274133
+Train Epoch: 28 [1200/2772 (4%)]	Loss: 0.483059
+Train Epoch: 28 [1300/2772 (5%)]	Loss: 2.618962
+Train Epoch: 28 [1400/2772 (5%)]	Loss: 1.377471
+Train Epoch: 28 [1500/2772 (5%)]	Loss: 1.668416
+Train Epoch: 28 [1600/2772 (6%)]	Loss: 3.859014
+Train Epoch: 28 [1700/2772 (6%)]	Loss: 4.177548
+Train Epoch: 28 [1800/2772 (6%)]	Loss: 1.193357
+Train Epoch: 28 [1900/2772 (7%)]	Loss: 1.105610
+Train Epoch: 28 [2000/2772 (7%)]	Loss: 3.309523
+Train Epoch: 28 [2100/2772 (8%)]	Loss: 5.122608
+Train Epoch: 28 [2200/2772 (8%)]	Loss: 2.695391
+Train Epoch: 28 [2300/2772 (8%)]	Loss: 1.779824
+Train Epoch: 28 [2400/2772 (9%)]	Loss: 2.181362
+Train Epoch: 28 [2500/2772 (9%)]	Loss: 3.295181
+Train Epoch: 28 [2600/2772 (9%)]	Loss: 2.720813
+Train Epoch: 28 [2700/2772 (10%)]	Loss: 1.054599
+
+Average Train Epoch Loss:  2.619895944809931
+Val Epoch: 28 [0/756 (0%)]	Average Loss So Far: 25.315027
+Val Epoch: 28 [100/756 (1%)]	Average Loss So Far: 21.196768
+Val Epoch: 28 [200/756 (1%)]	Average Loss So Far: 20.564767
+Val Epoch: 28 [300/756 (2%)]	Average Loss So Far: 20.373027
+Val Epoch: 28 [400/756 (3%)]	Average Loss So Far: 20.797257
+Val Epoch: 28 [500/756 (3%)]	Average Loss So Far: 20.688309
+Val Epoch: 28 [600/756 (4%)]	Average Loss So Far: 20.710271
+Val Epoch: 28 [700/756 (5%)]	Average Loss So Far: 20.774475
+Average Validation Epoch Loss:  20.843175251017172
+Average Threat Score: 0.002327797170013938 
+Train Epoch: 29 [0/2772 (0%)]	Loss: 0.457003
+Train Epoch: 29 [100/2772 (0%)]	Loss: 3.805273
+Train Epoch: 29 [200/2772 (1%)]	Loss: 3.262370
+Train Epoch: 29 [300/2772 (1%)]	Loss: 2.009694
+Train Epoch: 29 [400/2772 (1%)]	Loss: 2.966789
+Train Epoch: 29 [500/2772 (2%)]	Loss: 1.215650
+Train Epoch: 29 [600/2772 (2%)]	Loss: 2.414015
+Train Epoch: 29 [700/2772 (3%)]	Loss: 1.963389
+Train Epoch: 29 [800/2772 (3%)]	Loss: 1.601262
+Train Epoch: 29 [900/2772 (3%)]	Loss: 2.537590
+Train Epoch: 29 [1000/2772 (4%)]	Loss: 0.748595
+Train Epoch: 29 [1100/2772 (4%)]	Loss: 3.143810
+Train Epoch: 29 [1200/2772 (4%)]	Loss: 2.031866
+Train Epoch: 29 [1300/2772 (5%)]	Loss: 2.717113
+Train Epoch: 29 [1400/2772 (5%)]	Loss: 3.713979
+Train Epoch: 29 [1500/2772 (5%)]	Loss: 1.047569
+Train Epoch: 29 [1600/2772 (6%)]	Loss: 2.585870
+Train Epoch: 29 [1700/2772 (6%)]	Loss: 1.636162
+Train Epoch: 29 [1800/2772 (6%)]	Loss: 3.528184
+Train Epoch: 29 [1900/2772 (7%)]	Loss: 3.651495
+Train Epoch: 29 [2000/2772 (7%)]	Loss: 1.605163
+Train Epoch: 29 [2100/2772 (8%)]	Loss: 2.490515
+Train Epoch: 29 [2200/2772 (8%)]	Loss: 2.983690
+Train Epoch: 29 [2300/2772 (8%)]	Loss: 2.671979
+Train Epoch: 29 [2400/2772 (9%)]	Loss: 4.704960
+Train Epoch: 29 [2500/2772 (9%)]	Loss: 3.134405
+Train Epoch: 29 [2600/2772 (9%)]	Loss: 4.682749
+Train Epoch: 29 [2700/2772 (10%)]	Loss: 2.120699
+
+Average Train Epoch Loss:  2.523709926447827
+Val Epoch: 29 [0/756 (0%)]	Average Loss So Far: 23.933100
+Val Epoch: 29 [100/756 (1%)]	Average Loss So Far: 22.113612
+Val Epoch: 29 [200/756 (1%)]	Average Loss So Far: 21.432388
+Val Epoch: 29 [300/756 (2%)]	Average Loss So Far: 21.340804
+Val Epoch: 29 [400/756 (3%)]	Average Loss So Far: 20.783081
+Val Epoch: 29 [500/756 (3%)]	Average Loss So Far: 21.103060
+Val Epoch: 29 [600/756 (4%)]	Average Loss So Far: 20.974658
+Val Epoch: 29 [700/756 (5%)]	Average Loss So Far: 21.000109
+Average Validation Epoch Loss:  20.959941461603478
+Average Threat Score: 0.001882786333755585 
+Train Epoch: 30 [0/2772 (0%)]	Loss: 3.611285
+Train Epoch: 30 [100/2772 (0%)]	Loss: 1.943762
+Train Epoch: 30 [200/2772 (1%)]	Loss: 2.601058
+Train Epoch: 30 [300/2772 (1%)]	Loss: 0.877494
+Train Epoch: 30 [400/2772 (1%)]	Loss: 1.525984
+Train Epoch: 30 [500/2772 (2%)]	Loss: 2.933546
+Train Epoch: 30 [600/2772 (2%)]	Loss: 0.457767
+Train Epoch: 30 [700/2772 (3%)]	Loss: 3.313774
+Train Epoch: 30 [800/2772 (3%)]	Loss: 2.251546
+Train Epoch: 30 [900/2772 (3%)]	Loss: 3.145777
+Train Epoch: 30 [1000/2772 (4%)]	Loss: 4.111466
+Train Epoch: 30 [1100/2772 (4%)]	Loss: 0.456726
+Train Epoch: 30 [1200/2772 (4%)]	Loss: 2.520480
+Train Epoch: 30 [1300/2772 (5%)]	Loss: 2.008363
+Train Epoch: 30 [1400/2772 (5%)]	Loss: 2.921571
+Train Epoch: 30 [1500/2772 (5%)]	Loss: 2.350998
+Train Epoch: 30 [1600/2772 (6%)]	Loss: 1.571652
+Train Epoch: 30 [1700/2772 (6%)]	Loss: 0.407212
+Train Epoch: 30 [1800/2772 (6%)]	Loss: 2.575188
+Train Epoch: 30 [1900/2772 (7%)]	Loss: 4.207736
+Train Epoch: 30 [2000/2772 (7%)]	Loss: 1.302950
+Train Epoch: 30 [2100/2772 (8%)]	Loss: 3.107199
+Train Epoch: 30 [2200/2772 (8%)]	Loss: 1.413242
+Train Epoch: 30 [2300/2772 (8%)]	Loss: 2.735045
+Train Epoch: 30 [2400/2772 (9%)]	Loss: 0.985524
+Train Epoch: 30 [2500/2772 (9%)]	Loss: 5.127305
+Train Epoch: 30 [2600/2772 (9%)]	Loss: 1.810101
+Train Epoch: 30 [2700/2772 (10%)]	Loss: 2.388896
+
+Average Train Epoch Loss:  2.4367964830340934
+Val Epoch: 30 [0/756 (0%)]	Average Loss So Far: 19.840981
+Val Epoch: 30 [100/756 (1%)]	Average Loss So Far: 21.867190
+Val Epoch: 30 [200/756 (1%)]	Average Loss So Far: 21.726717
+Val Epoch: 30 [300/756 (2%)]	Average Loss So Far: 21.394670
+Val Epoch: 30 [400/756 (3%)]	Average Loss So Far: 21.295030
+Val Epoch: 30 [500/756 (3%)]	Average Loss So Far: 21.047516
+Val Epoch: 30 [600/756 (4%)]	Average Loss So Far: 21.018379
+Val Epoch: 30 [700/756 (5%)]	Average Loss So Far: 21.114035
+Average Validation Epoch Loss:  21.106281508844365
+Average Threat Score: 0.0022963218815333984 
+Train Epoch: 31 [0/2772 (0%)]	Loss: 1.248220
+Train Epoch: 31 [100/2772 (0%)]	Loss: 1.424507
+Train Epoch: 31 [200/2772 (1%)]	Loss: 4.912382
+Train Epoch: 31 [300/2772 (1%)]	Loss: 1.225936
+Train Epoch: 31 [400/2772 (1%)]	Loss: 5.687066
+Train Epoch: 31 [500/2772 (2%)]	Loss: 5.624815
+Train Epoch: 31 [600/2772 (2%)]	Loss: 3.220973
+Train Epoch: 31 [700/2772 (3%)]	Loss: 3.063904
+Train Epoch: 31 [800/2772 (3%)]	Loss: 1.755282
+Train Epoch: 31 [900/2772 (3%)]	Loss: 2.129699
+Train Epoch: 31 [1000/2772 (4%)]	Loss: 1.454898
+Train Epoch: 31 [1100/2772 (4%)]	Loss: 3.625992
+Traceback (most recent call last):
+  File "trainYolo.py", line 100, in <module>
+    pred_map, loss = model(sample.to(device), transform_target(target).to(device))
+  File "/home/mh5275/miniconda3/envs/pytorch/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/mh5275/newYolo/src.py", line 559, in forward
+    output_1, yolo_loss = self.get_bounding_boxes(x, encoding = encoding, targets = yolo_targets)
+ValueError: not enough values to unpack (expected 2, got 0)
