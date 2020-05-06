@@ -1,0 +1,22 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.2
+  latest version: 4.8.3
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+# All requested packages already installed.
+
+Traceback (most recent call last):
+  File "trainYolo_withPretrain.py", line 76, in <module>
+    model.init_weights('/scratch/mh5275/AE_pretrain_new_01.pt')
+  File "/home/mh5275/newYolo_withPretrain/src.py", line 664, in init_weights
+    logger.info('=> loading pretrained model {}'.format(pretrained))
+NameError: name 'logger' is not defined
