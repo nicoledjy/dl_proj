@@ -26,7 +26,7 @@ from data_helper import UnlabeledDataset, LabeledDataset
 from helper import collate_fn, draw_box, compute_ts_road_map, compute_ats_bounding_boxes
 
 
-from src import *
+from yolo import *
 
 
 if __name__ == '__main__':
