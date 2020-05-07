@@ -1,6 +1,8 @@
 # dl_proj
 
-- AE pretraining
+- AutoEncoder pretraining
+
+Use folder `autoencoder`
 
 
 
