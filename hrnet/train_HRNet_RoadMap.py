@@ -3,8 +3,6 @@
 
 import os
 import random
-import argparse
-
 
 from collections import OrderedDict
 import numpy as np
@@ -30,33 +28,9 @@ from hrnet import get_seg_model, get_config
 
 if __name__ == '__main__':
 
-	parser = argparse.ArgumentParser(description='Training HRNet for drawing Binary Road Map')
-	parser.add_argument('--batch-size', type=int, default=2, metavar='N',
-                      help='input batch size for training (default: 2)')
-	parser.add_argument('--epochs', type=int, default=10, metavar='N',
-                      help='number of epochs to train (default: 10)')
-	parser.add_argument('--lr', type=float, default=1e-4, metavar='LR',
-                      help='learning rate (default: 1e-4)')
-	parser.add_argument('--weight-decay', type=float, default=1e-4,
-                      help='Weight decay constant (default: 1e-4)')
-	parser.add_argument('--data-dir', type=str, default='../data',
-                      help='data directory')
-	parser.add_argument('--out-file', type=str, default='HRNET_RM_model.pt',
-                      help='output model file name, will be stored to current directory')
-
-	args = parser.parse_args()
-
-	image_folder = args.data_dir
-	annotation_csv = f'{args.data_dir}/annotation.csv'
-	epochs = args.epochs
-	batch_size = args.batch_size
-	lr = args.lr
-	weight_decay = args.weight_decay
-	outfile = args.out_file
-	print('========================================================================================')
-	print('Current Parameters:\n epochs = {},\n batch_size = {},\n lr = {},\n weight_decay = {},\n output model state_dict will stored at: {} '\
-		.format(epochs, batch_size, lr, weight_decay, outfile))
-	print('========================================================================================')
+	image_folder = '../data'
+	annotation_csv = '../data/annotation.csv'
+	
 	random.seed(0)
 	np.random.seed(0)
 	torch.manual_seed(0);
@@ -67,8 +41,8 @@ if __name__ == '__main__':
 	# You should devide the labeled_scene_index into two subsets (training and validation)
 	labeled_scene_index = np.arange(106, 134)
 
-	train_index = np.arange(106,128)
-	val_index = np.arange(128,134)
+	train_index = np.arange(106,108)
+	val_index = np.arange(128,130)
 
 	transform = torchvision.transforms.ToTensor()
 
@@ -100,15 +74,15 @@ if __name__ == '__main__':
 	#param_list = [p for p in model.parameters() if p.requires_grad]
 	optimizer = torch.optim.SGD(
 		[{'params': filter(lambda p: p.requires_grad, model.parameters()),
-		'lr': lr}],
-		lr=lr,
+		'lr': 0.0001}],
+		lr=0.0001,
 		momentum=0.9,
-		weight_decay=weight_decay,
+		weight_decay=0.0001,
 		nesterov=False,
 		)
 	best_val_loss = 100
 
-	#epochs = 10
+	epochs = 10
 	for epoch in range(epochs):
 
 		#### train logic ####
@@ -153,14 +127,12 @@ if __name__ == '__main__':
 				val_losses.append(loss.item())
 
 				out_map = (pred_map > 0.5).float()
-				
 				threat_score.append(compute_ts_road_map(out_map, road_img).item())
 
-			if i % 100 == 0:
-				print("Validation Epoch: {}, Average Validation Epoch Loss: {}".format(epoch, np.mean(val_losses)))
-				print("Average Threat Score: {} ".format(np.mean(threat_score)))
+			print("Validation Epoch: {}, Average Validation Epoch Loss: {}".format(epoch, np.mean(val_losses)))
+			print("Average Threat Score: {} ".format(np.mean(threat_score)))
 
 			if np.mean(val_losses) < best_val_loss:
 				best_val_loss = np.mean(val_losses)
-				torch.save(model.state_dict(), outfile)
+				torch.save(model.state_dict(), 'test.pt')
 

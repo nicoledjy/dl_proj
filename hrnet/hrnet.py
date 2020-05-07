@@ -588,6 +588,8 @@ class HighResolutionNet(nn.Module):
 def get_seg_model(cfg, **kwargs):
     model = HighResolutionNet(cfg, **kwargs)
     # Initialize weights from normal distribution (because we cannot use pretrained weights)
+    #model.init_weights()
+    # loading AE pretrain file
     model.init_weights()
 
     return model

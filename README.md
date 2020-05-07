@@ -4,9 +4,9 @@
 
 
 
-- Roadmap prediction without pre-training:
+- Roadmap prediction:
 
-  Use folder `without_pretrain`
+  Use folder `hrnet`
 
   - --batch-size, default=2
   - --epochs, default=10
@@ -19,6 +19,16 @@
   python train_HRNet_RoadMap.py
   ```
 
+
+
+- Bounding Box prediction:
+
+  Use folder `yolo`
+
+  ```
+  python trainYolo_withPretrain.py 
+  python trainYolo.py 
+  ```
 
 
 
