@@ -31,7 +31,7 @@ LongTensor = torch.cuda.LongTensor if cuda else torch.LongTensor
 BoolTensor = torch.cuda.BoolTensor if cuda else torch.BoolTensor
 
 
-def target_encode(boxes, labels):
+def encode_target(boxes, labels):
         """ Encode box coordinates and class labels as one target tensor.
         Args:
             boxes: (tensor) [[x1, y1, x2, y2]_obj1, ...], normalized from 0.0 to 1.0 w.r.t. image width/height.
@@ -39,7 +39,6 @@ def target_encode(boxes, labels):
         Returns:
             An encoded tensor sized [S, S, 5 x B + C], 5=(x, y, w, h, conf)
         """
-
         C = NUM_CLASSES
         N = 5 * B + C
 
@@ -55,8 +54,6 @@ def target_encode(boxes, labels):
             x0y0 = ij * cell_size # x & y of the cell left-top corner.
             xy_normalized = (xy - x0y0) / cell_size # x & y of the box on the cell, normalized from 0.0 to 1.0.
 
-            # TBM, remove redundant dimensions from target tensor.
-            # To remove these, loss implementation also has to be modified.
             for k in range(B):
                 s = 5 * k
                 target[j, i, s  :s+2] = xy_normalized
@@ -66,7 +63,7 @@ def target_encode(boxes, labels):
 
         return target
     
-def pred_decode(pred_tensor, conf_thresh=0.1, prob_thresh=0.1):
+def decode_pred(pred_tensor, conf_thresh=0.1, prob_thresh=0.1):
         """ Decode tensor into box coordinates, class labels, and probs_detected.
         Args:
             pred_tensor: (tensor) tensor to decode sized [S, S, 5 x B + C], 5=(x, y, w, h, conf)
@@ -127,7 +124,7 @@ def pred_decode(pred_tensor, conf_thresh=0.1, prob_thresh=0.1):
         return boxes, labels, confidences, class_scores
 
 
-def nms(boxes, scores, nms_thresh = 0.35):
+def nms(boxes, scores, nms_thresh = 0.25):
     """ Apply non maximum supression.
     Args:
     Returns:
@@ -171,19 +168,16 @@ def nms(boxes, scores, nms_thresh = 0.35):
     return LongTensor(ids)
 
 
-def transform_target(in_target):
+def process_target(target):
     
     out_target = []
-    
-    for tgt_index in range(len(in_target)):
+    for idx in range(len(target)):
         
         #how many boxes for these target
-        nbox = in_target[tgt_index]['bounding_box'].shape[0]
+        nbox = target[idx]['bounding_box'].shape[0]
         individual_target = FloatTensor(nbox, 14).fill_(0)
         
-        # CONVERT ALL THE BOUNDING BOXES for an individual sample at once
-        
-        bbox = in_target[tgt_index]['bounding_box'].to(device)
+        bbox = target[idx]['bounding_box'].to(device)
         translation = FloatTensor(bbox.shape[0], bbox.shape[1], bbox.shape[2])
         translation[:, 0, :].fill_(-40)
         translation[:, 1, :].fill_(40)
@@ -198,72 +192,28 @@ def transform_target(in_target):
         x_max = box[:, 0].max(dim = 1)[0]
         y_max = box[:, 1].max(dim = 1)[0]
 
-
         x_min = x_min / WIDTH
         y_min = y_min / HEIGHT
         x_max = x_max / WIDTH
         y_max = y_max / HEIGHT
         
-
         boxes = torch.stack([x_min, y_min, x_max, y_max], 1)
 
         labels = IntTensor(nbox)
         for box_index in range(nbox):
-            category = in_target[tgt_index]['category'][box_index]
-            
-            # from which sample in the batch
+            category = target[idx]['category'][box_index]
             labels[box_index] = category
             
-        individual_target = target_encode(boxes, labels)
+        individual_target = encode_target(boxes, labels)
         out_target.append(individual_target)
         
-    return torch.stack(out_target, dim = 0) 
-
-
-# works by side effects
-def load_pretask_weight_from_model(model, presaved_encoder):
-    model.encoder.load_state_dict(presaved_encoder.state_dict())
-    
-    for param in model.encoder.parameters():
-        param.requires_grad = False
-        
-    return model
-
-
-# use this if you want Initialize Our Model with encoder weights from an existing pretask encoder in memory
-def initialize_model_for_training(presaved_encoder):
-    #model = KobeModel(num_classes = 10, encoder_features = 6, rm_dim = 800)
-    model = Darknet(num_classes = 10, encoder_features = 6, rm_dim = 800)
-    load_pretask_weight_from_model(model, presaved_encoder)
-    
-    return model
-
-
-# use this if you want Initialize Our Model with encoder weights from a file
-def initialize_model_for_training_file(presaved_encoder_file):
-    presaved_encoder = PreTaskEncoder()
-    presaved_encoder.load_state_dict(torch.load(presaved_encoder_file))
-    presaved_encoder.eval()
-
-    return initialize_model_for_training(presaved_encoder)
-
-
-def RoadMapLoss(pred_rm, target_rm):
-    bce_loss = nn.BCELoss()
-
-    return bce_loss(pred_rm, target_rm)
-
-
-def total_joint_loss(yolo_loss, rm_loss, lambd):
-    return yolo_loss + lambd * rm_loss
-
+    return torch.stack(out_target, dim = 0)
 
 ENCODER_HIDDEN = int(26718 / 2)
 
-
-class PreTaskEncoder(nn.Module):
+class YoloEncoder(nn.Module):
     def __init__(self, n_features):
-        super(PreTaskEncoder, self).__init__()
+        super(YoloEncoder, self).__init__()
         # number of different kernels to use
         self.n_features = n_features
         self.conv1 = nn.Conv2d(in_channels=3,
@@ -308,12 +258,10 @@ class ReshapeLayer1d(nn.Module):
 
 
 class YoloDecoder(nn.Module):
-    
     def __init__(self, num_classes):
         
         super(YoloDecoder, self).__init__()
         self.num_classes = num_classes
-        
         # takes in dense output from encoder or shared decoder and puts into an
         # image of dim img_dim
 
@@ -493,43 +441,14 @@ class YoloLoss(nn.Module):
         return loss
 
 
-class RmDecoder(nn.Module):
-    def __init__(self, rm_dim):
-        super(RmDecoder, self).__init__()
-        
-        self.rm_dim = 800
-        self.model = nn.Sequential(
-            nn.Linear(6 * ENCODER_HIDDEN, 2 * 15 * 15),
-            nn.ReLU(),
-            ReshapeLayer2d(2, 15),
-            nn.ConvTranspose2d(2, 2, kernel_size=4, stride = 3),
-            nn.ReLU(),
-            nn.ConvTranspose2d(2, 2, kernel_size=10, stride = 2),
-            nn.ReLU(),
-            nn.Upsample(scale_factor=4),
-            nn.ConvTranspose2d(2, 2, kernel_size=4, stride = 2),
-            nn.ReLU(),
-            nn.Conv2d(2, 1, kernel_size = 3, stride = 1),
-            # Sigmoid is final layer in Yolo v1
-            nn.Sigmoid()
-        )
-        
-    def forward(self, x):
-        
-        x = self.model(x)
-        x = x.squeeze(1)
-        return x
-
 
 class Darknet(nn.Module):
     
     def __init__(self, num_classes, encoder_features, rm_dim):
         super(Darknet, self).__init__()
-        
-        
+
         self.num_classes = num_classes
-        self.encoder = PreTaskEncoder(encoder_features)
-        
+        self.encoder = YoloEncoder(encoder_features)
         
         #self.shared_decoder = nn.Sequential()
         
@@ -556,15 +475,9 @@ class Darknet(nn.Module):
     def forward(self, x, yolo_targets = None):
         encoding = self.encode(x)
         
-        output_1, yolo_loss = self.get_bounding_boxes(x, encoding = encoding, targets = yolo_targets)
-        
-        # roadmap decoder
-        #output_2, rm_loss = self.get_road_map(x, encoding, targets = rm_targets)
-        # output1 is not in the context of our bounding boxes
-        #return output_1, output_2, yolo_loss, rm_loss
-        #return output_1, yolo_loss, output_2, rm_loss
+        bbox, yolo_loss = self.get_bounding_boxes(x, encoding = encoding, targets = yolo_targets)
 
-        return output_1, yolo_loss
+        return bbox, yolo_loss
 
     
     # for easy use for competition
@@ -585,9 +498,9 @@ class Darknet(nn.Module):
         
         for output in outputs:
             # Get detected boxes_detected, labels, confidences, class-scores.
-            boxes_normalized_all, class_labels_all, confidences_all, class_scores_all = pred_decode(output)
+            boxes_normalized_all, class_labels_all, confidences_all, class_scores_all = decode_pred(output)
             if boxes_normalized_all.size(0) == 0:
-                return ()
+                continue
 
             # Apply non maximum supression for boxes of each class.
             boxes_normalized, class_labels, probs = [], [], []
@@ -628,56 +541,36 @@ class Darknet(nn.Module):
             x3 = center_x - width/2
             x4 = center_x + width/2
             
-            
             y1 = center_y - height/2
             y2 = center_y + height/2
             y3 = center_y + height/2
             y4 = center_y - height/2
             
+            
             better_coordinates[:, 0, 0] = x1
-            better_coordinates[:, 0, 1] = x2
-            better_coordinates[:, 0, 2] = x3
+            better_coordinates[:, 0, 1] = x3
+            better_coordinates[:, 0, 2] = x2
             better_coordinates[:, 0, 3] = x4
             
             better_coordinates[:, 1, 0] = y1
             better_coordinates[:, 1, 1] = y2
-            better_coordinates[:, 1, 2] = y3
-            better_coordinates[:, 1, 3] = y4
+            better_coordinates[:, 1, 2] = y4
+            better_coordinates[:, 1, 3] = y3
             
             better_coordinates[:, 1, :].mul_(-1)
-            # shift back!
             better_coordinates += translation
             
             boxes.append(better_coordinates)
-        
-        #print('got this incoming')
-        #print(x.shape)
-        #print('got these many boxes to look at {}'.format(len(boxes)))
-        ##print('it has this many detections {} at one site'.format(boxes[0].shape[0]))
-        #print("looks like this")
-        #print(boxes[0])
+
         return tuple(boxes), yoloLossValue
 
     def init_weights(self, pretrained = ''):
-        cuda = torch.cuda.is_available()
-        device = 'cuda:0' if cuda else 'cpu'
         if os.path.isfile(pretrained):
-            pretrained_dict = torch.load(pretrained, map_location=device)
+            pretrained_dict = torch.load(pretrained)
             model_dict = self.state_dict()
             pretrained_dict = {k: v for k, v in pretrained_dict.items()
                                if k in model_dict.keys()}
             model_dict.update(pretrained_dict)
             self.load_state_dict(model_dict)
     
-    # def get_road_map(self, x, encoding = None, targets = None):
-    #     if encoding is None:
-    #         encoding = self.encode(x)
-        
-    #     outputs = self.rm_decoder(encoding)
-    #     bce_loss = nn.BCELoss()
-    #     if targets is not None:
-    #         loss = bce_loss(outputs, targets) / x.shape[0]
-    #     else:
-    #         loss = 0
-    #     return outputs, loss
 

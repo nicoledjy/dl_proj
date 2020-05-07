@@ -31,8 +31,8 @@ from src import *
 
 if __name__ == '__main__':
 
-	image_folder = '/scratch/mh5275/data'
-	annotation_csv = '/scratch/mh5275/data/annotation.csv'
+	image_folder = '../data'
+	annotation_csv = '../data/annotation.csv'
 	
 	random.seed(0)
 	np.random.seed(0)
@@ -46,8 +46,8 @@ if __name__ == '__main__':
 	# You should devide the labeled_scene_index into two subsets (training and validation)
 	labeled_scene_index = np.arange(106, 134)
 
-	train_index = np.arange(106,128)
-	val_index = np.arange(128,134)
+	train_index = np.arange(106,108)
+	val_index = np.arange(128,130)
 
 
 
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 
 			sample = torch.stack(sample).to(device)
 			optimizer.zero_grad()
-			pred_map, loss = model(sample.to(device), transform_target(target).to(device))
+			pred_map, loss = model(sample.to(device), process_target(target).to(device))
 			train_losses.append(loss.item())
 			if loss.item() != 0:
 				loss.backward()
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 			sample = torch.stack(sample).to(device)
 			
 			with torch.no_grad():
-				pred_map, loss = model(sample.to(device), transform_target(target).to(device))
+				pred_map, loss = model(sample.to(device), process_target(target).to(device))
 				predicted_bounding_boxes = model.get_bounding_boxes(sample.to(device))
 				val_losses.append(loss.item())
 

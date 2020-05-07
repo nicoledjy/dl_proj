@@ -98,7 +98,7 @@ if __name__ == '__main__':
 
 			sample = torch.stack(sample).to(device)
 			optimizer.zero_grad()
-			pred_map, loss = model(sample.to(device), transform_target(target).to(device))
+			pred_map, loss = model(sample.to(device), process_target(target).to(device))
 			train_losses.append(loss.item())
 			if loss.item() != 0:
 				loss.backward()
@@ -118,7 +118,7 @@ if __name__ == '__main__':
 			sample = torch.stack(sample).to(device)
 			
 			with torch.no_grad():
-				pred_map, loss = model(sample.to(device), transform_target(target).to(device))
+				pred_map, loss = model(sample.to(device), process_target(target).to(device))
 				predicted_bounding_boxes = model.get_bounding_boxes(sample.to(device))
 				val_losses.append(loss.item())
 
