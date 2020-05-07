@@ -4,6 +4,11 @@
 
   Use folder `autoencoder`
 
+  ```
+  python AE_pretrain_new.py
+  ```
+  The AE_pretrain_new.py is the version we decided to use. It mainly go through the images one by one in [3, 256, 306] format. The previous version AE_pretrain.py sew 6 images together as in [3, 256x3, 306x2] format, which didn't yield a good result.
+
 
 
 - Roadmap prediction:
