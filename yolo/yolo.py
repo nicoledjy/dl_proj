@@ -9,19 +9,23 @@ import torchvision
 from data_helper import UnlabeledDataset, LabeledDataset
 from helper import collate_fn, draw_box
 
-BASE = 40
+
+
+## Credit to: 
+## https://towardsdatascience.com/yolov1-you-only-look-once-object-detection-e1f3ffec8a89
+## https://github.com/motokimura/yolo_v1_pytorch
+
+
 WIDTH = 2 * 40
 HEIGHT = 2 * 40
-
-NUM_CLASSES = 10
-
+NUM_CLASSES = 10 # categories
 S = 7
 B = 2
+
 l_coord = 5
 l_noobj = 0.5
 
 cuda = torch.cuda.is_available()
-#cuda = False
 
 device = 'cuda:0' if cuda else 'cpu'
 
@@ -128,6 +132,7 @@ def nms(boxes, scores, nms_thresh = 0.25):
     """ Apply non maximum supression.
     Args:
     Returns:
+    https://github.com/motokimura/yolo_v1_pytorch/blob/master/detect.py
     """
     threshold = nms_thresh
 
@@ -169,6 +174,9 @@ def nms(boxes, scores, nms_thresh = 0.25):
 
 
 def process_target(target):
+    '''
+    Helper function to process target from [N, 2, 4] -> [S, S, 5 x B + C] format 
+    '''
     
     out_target = []
     for idx in range(len(target)):
@@ -209,7 +217,10 @@ def process_target(target):
         
     return torch.stack(out_target, dim = 0)
 
-ENCODER_HIDDEN = int(26718 / 2)
+
+
+
+ENCODER_HIDDEN = int(3*64*76)
 
 class YoloEncoder(nn.Module):
     def __init__(self, n_features):
@@ -218,23 +229,30 @@ class YoloEncoder(nn.Module):
         self.n_features = n_features
         self.conv1 = nn.Conv2d(in_channels=3,
                                out_channels=n_features,
-                               kernel_size=5,
+                               kernel_size=1,
                                )
         self.conv2 = nn.Conv2d(n_features,
                                int(n_features / 2),
-                               kernel_size=5)
+                               kernel_size=1)
     
     def forward(self, x):
+        
+        # input size [2, 3, 256, 306]
         x = self.conv1(x)
         x = F.relu(x)
+        # apply max pooling to extract import features from image
         x = F.max_pool2d(x, kernel_size=2)
+        # after max pooling torch.Size([2, 6, 128, 153])
 
         x = self.conv2(x)
         x = F.relu(x)
+        # apply max pooling to extract import features from image
         x = F.max_pool2d(x, kernel_size=2)
+        # after max pooling torch.Size([2, 3, 64, 76])
 
-        # return an array shape
+        # return as 1d array
         x = x.view(-1, ENCODER_HIDDEN)
+        
         return x
 
 
@@ -262,8 +280,6 @@ class YoloDecoder(nn.Module):
         
         super(YoloDecoder, self).__init__()
         self.num_classes = num_classes
-        # takes in dense output from encoder or shared decoder and puts into an
-        # image of dim img_dim
 
         self.m = nn.Sequential(
             nn.Linear(6 * ENCODER_HIDDEN, 2 * 15 * 15),
@@ -289,7 +305,6 @@ class YoloDecoder(nn.Module):
         return prediction
 
 
-# from https://github.com/motokimura/yolo_v1_pytorch/
 class YoloLoss(nn.Module):
     def __init__(self, feature_size=S, num_bboxes=B, num_classes=NUM_CLASSES, 
                  lambda_coord=l_coord, lambda_noobj=l_noobj):
@@ -444,65 +459,59 @@ class YoloLoss(nn.Module):
 
 class Darknet(nn.Module):
     
-    def __init__(self, num_classes, encoder_features, rm_dim):
+    def __init__(self, num_classes, encoder_features):
         super(Darknet, self).__init__()
 
         self.num_classes = num_classes
+
         self.encoder = YoloEncoder(encoder_features)
-        
-        #self.shared_decoder = nn.Sequential()
-        
         self.yolo_decoder = YoloDecoder(num_classes = num_classes)
         
         self.yolo_loss = YoloLoss(feature_size=S, num_bboxes=B, num_classes=num_classes, 
                                   lambda_coord=l_coord, lambda_noobj = l_noobj)
         
-        #self.rm_decoder = RmDecoder(rm_dim)
-        
     def encode(self, x):
-        
-        # get all the representations laid out like this
+        '''
+        Encode input 6 images 
+        '''
+        # encode each of the input image, and then concatenate
         x = torch.cat([self.encoder(x[:, i, :]) for i in range(6)], dim = 1)
-            
-            
-        #convert from dense representation from encoder into an image
-        # x.view(...)
-        
-        #x = self.shared_decoder(x)
-        
+        #print('after encode ', x[0].shape)
         return x
     
-    def forward(self, x, yolo_targets = None):
-        encoding = self.encode(x)
-        
-        bbox, yolo_loss = self.get_bounding_boxes(x, encoding = encoding, targets = yolo_targets)
+    def forward(self, x, target = None):
 
-        return bbox, yolo_loss
+        encoding = self.encode(x)        
+        bbox, loss = self.get_bounding_boxes(x, encoding = encoding, targets = target)
 
-    
-    # for easy use for competition
-    # in competition, encoding is None
+        return bbox, loss
+
+
     def get_bounding_boxes(self, x, encoding = None, targets = None):
+        '''
+        Detect + decode: 
+        https://github.com/motokimura/yolo_v1_pytorch/blob/master/detect.py
+        '''
         if encoding is None:
             encoding = self.encode(x)
         
         outputs = self.yolo_decoder(encoding)
         
         if targets is not None:
-            yoloLossValue = self.yolo_loss(outputs, targets)
+            loss = self.yolo_loss(outputs, targets)
         else:
-            yoloLossValue = 0
+            loss = 0
         
         
         boxes = []
         
         for output in outputs:
-            # Get detected boxes_detected, labels, confidences, class-scores.
+            # detected bounding boxes, labels, confidences, class confidence scores
             boxes_normalized_all, class_labels_all, confidences_all, class_scores_all = decode_pred(output)
             if boxes_normalized_all.size(0) == 0:
-                continue
+                continue # if no box found, continue
 
-            # Apply non maximum supression for boxes of each class.
+            # apply non maximum supression for boxes (for each class)
             boxes_normalized, class_labels, probs = [], [], []
 
             for class_label in range(self.num_classes):
@@ -562,9 +571,12 @@ class Darknet(nn.Module):
             
             boxes.append(better_coordinates)
 
-        return tuple(boxes), yoloLossValue
+        return tuple(boxes), loss
 
     def init_weights(self, pretrained = ''):
+        '''
+        This function will be used to add pretrain weights to the models
+        '''
         if os.path.isfile(pretrained):
             pretrained_dict = torch.load(pretrained)
             model_dict = self.state_dict()

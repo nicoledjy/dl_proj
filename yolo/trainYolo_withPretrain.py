@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	trainloader = torch.utils.data.DataLoader(labeled_trainset, batch_size=2, shuffle=True, num_workers=2, collate_fn=collate_fn)
 	valloader = torch.utils.data.DataLoader(labeled_valset, batch_size=2, shuffle=True, num_workers=2, collate_fn=collate_fn)
 
-	model = Darknet(num_classes = 10, encoder_features = 6, rm_dim = 800).to(device)
+	model = Darknet(num_classes = 10, encoder_features = 6).to(device)
 	model.init_weights('/scratch/mh5275/AE_pretrain_new_01.pt')
 
 	#param_list = [p for p in model.parameters() if p.requires_grad]

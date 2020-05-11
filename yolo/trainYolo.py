@@ -72,7 +72,7 @@ if __name__ == '__main__':
 	trainloader = torch.utils.data.DataLoader(labeled_trainset, batch_size=2, shuffle=True, num_workers=2, collate_fn=collate_fn)
 	valloader = torch.utils.data.DataLoader(labeled_valset, batch_size=2, shuffle=True, num_workers=2, collate_fn=collate_fn)
 
-	model = Darknet(num_classes = 10, encoder_features = 6, rm_dim = 800).to(device)
+	model = Darknet(num_classes = 10, encoder_features = 6).to(device)
 
 	#param_list = [p for p in model.parameters() if p.requires_grad]
 	optimizer = torch.optim.SGD(
@@ -132,11 +132,11 @@ if __name__ == '__main__':
 		print("Average Threat Score: {} ".format(np.mean(threat_score)))
 		if np.mean(val_losses) < best_val_loss:
 			best_val_loss = np.mean(val_losses)
-			torch.save(model.state_dict(), 'best_val_yolo01.pt')
+			torch.save(model.state_dict(), 'test.pt')
 
 		if np.mean(threat_score) > best_threat:
 			best_threat = np.mean(threat_score)
-			torch.save(model.state_dict(), 'best_threat_yolo01.pt')
+			torch.save(model.state_dict(), 'test.pt')
 
 
 
